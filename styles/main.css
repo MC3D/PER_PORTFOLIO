@@ -147,6 +147,12 @@ article {
   height: 0;
   content: ''; }
 
+.mega-octicon {
+  font-size: 26px; }
+
+@media only screen and (min-width: 1170) {
+  font-size: 32px; }
+
 #sections {
   width: 100%;
   max-width: 1800px;
@@ -165,20 +171,32 @@ article {
   background-color: #f3f3f3; }
 
 .section header {
-  width: 65%;
-  margin: 0 auto;
-  padding: 75px 0; }
+  padding: 60px 0 30px;
+  width: 100%;
+  margin: 0 auto; }
+
+@media only screen and (min-width: 1170) {
+  .section header {
+    padding: 75px 0; } }
 
 .section header h2 {
-  font-size: 35px;
+  font-size: 1.25rem;
   font-weight: 300;
   margin-bottom: 32px;
   text-transform: uppercase; }
 
 .section header p {
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 1.4;
   color: #737373; }
+
+@media only screen and (min-width: 1170px) {
+  .section header {
+    width: 65%; }
+  .section header h2 {
+    font-size: 2.1875rem; }
+  .section header p {
+    font-size: 1.25rem; } }
 
 @media only screen and (min-width: 1170px) {
   .item {
@@ -330,9 +348,13 @@ article {
 .project p {
   font-size: 12px;
   line-height: 1.4;
-  margin: 2% 0 20px 5%;
+  margin: 2% 0 20px;
   text-align: left;
   letter-spacing: 1.05px; }
+
+@media only screen and (min-width: 1170px) {
+  .project p {
+    margin-left: 5%; } }
 
 .project .thumbnail {
   position: relative;
