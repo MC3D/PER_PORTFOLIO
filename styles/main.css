@@ -122,9 +122,6 @@ em {
 abbr {
   color: #fc5253; }
 
-abbr[title] {
-  border: none; }
-
 mark {
   font-weight: inherit;
   font-style: inherit;
