@@ -224,7 +224,7 @@ article {
   line-height: 1.925rem;
   position: relative;
   z-index: 10;
-  top: 40%;
+  top: 50%;
   max-width: 845px;
   width: 65%;
   margin: 0 auto;
@@ -244,7 +244,7 @@ article {
   top: 0;
   background-color: #000;
   width: 100%;
-  padding: 0 5px;
+  padding: 3px 5px;
   color: #fff; }
 
 @media only screen and (min-width: 1170px) {
@@ -285,7 +285,7 @@ article {
 @media only screen and (min-width: 1170px) {
   #nav .nav-list {
     float: right;
-    display: flex;
+    display: flex !important;
     -webkit-flex-direction: row;
     flex-direction: row; } }
 

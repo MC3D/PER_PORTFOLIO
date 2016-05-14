@@ -1,17 +1,6 @@
-// $( document ).ready(
-//   $(window).on('scroll', function() {
-//     $('.timeline-event').each(function() {
-//       if ($(this).offset().top <= $(window).scrollTop() + $(window).height() * 0.75 && $(this).find('timeline-icon').hasClass('is-hidden')) {
-//         $(this).find('.timeline-icon, .timeline-content').removeClass('is-hidden').addClass('bounce-in');
-//       }
-//     });
-//   }));
-
-
-
 $(function() {
   'use strict';
-  var x = $('#nav').height() * 2;
+  var x = $('#nav').height() * 3;
   var y = $('#nav').offset().top;
   console.log(y);
 
@@ -26,9 +15,11 @@ $(function() {
   });
 
   $('#nav-link-skills').on('click', function() {
+    $('.nav-list').css('display', 'none');
     $('html, body').animate({
       scrollTop: ($('#section-skills').offset().top - x)
     }, 500); // 500 milliseconds
+
   });
 
   $('#nav-link-projects').on('click', function() {
