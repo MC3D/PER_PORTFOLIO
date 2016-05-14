@@ -165,7 +165,7 @@ article {
   background-color: #f3f3f3; }
 
 .section header {
-  width: 50%;
+  width: 65%;
   margin: 0 auto;
   padding: 75px 0; }
 
@@ -264,7 +264,7 @@ article {
     background-color: #000 !important; } }
 
 .toggle-button {
-  color: #fc5253;
+  color: #fff;
   background-color: transparent;
   border: none;
   font-size: 1.375rem; }
@@ -311,17 +311,21 @@ article {
     margin: 0 10px; } }
 
 #section-skills .icon {
-  font-size: 60px;
+  font-size: 40px;
   display: block;
-  margin: 0 0 25px 0; }
+  margin: 30px 0 15px 0; }
+
+#section-skills .fa-html5 {
+  font-size: 48px;
+  margin-bottom: 15px; }
 
 @media only screen and (min-width: 1170px) {
   #section-skills .icon {
-    margin: 0 10% 25px 0; } }
-
-#section-skills .fa-html5 {
-  font-size: 70px;
-  margin-bottom: 15px; }
+    margin: 0 10% 25px 0;
+    font-size: 60px; }
+  #section-skills .fa-html5 {
+    font-size: 70px;
+    margin-bottom: 15px; } }
 
 .project p {
   font-size: 12px;
@@ -332,7 +336,7 @@ article {
 
 .project .thumbnail {
   position: relative;
-  width: 90%;
+  width: 100%;
   height: 220px;
   margin: 0 auto;
   background-size: cover; }
@@ -344,6 +348,10 @@ article {
     bottom: 0;
     left: 0;
     content: ''; }
+
+@media only screen and (min-width: 1170px) {
+  .project .thumbnail {
+    width: 90%; } }
 
 .project-title {
   position: relative;
