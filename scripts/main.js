@@ -6,3 +6,20 @@
 //       }
 //     });
 //   }));
+
+
+$(function () {
+  'use strict';
+    var y = $('#nav').offset().top;
+    console.log(y);
+
+    $(window).on('scroll', function () {
+        if (y <= $(window).scrollTop()) {
+            // if so, add the fixed class
+            $('#nav').addClass('fixed');
+        } else {
+            // otherwise remove it
+            $('#nav').removeClass('fixed');
+        }
+    });
+});

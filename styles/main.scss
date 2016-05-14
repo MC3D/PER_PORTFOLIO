@@ -5,6 +5,13 @@
 $primary-font-family: 'Istok Web', sans-serif;
 $primary-accent-color: #fc5253;
 
+.fixed {
+    position: fixed !important;
+    bottom: auto !important;
+    top: 0;
+    background-color: #000;
+}
+
 html,
 body
 {
@@ -222,8 +229,8 @@ article
     z-index: 10;
     bottom: 0;
 
-    width: 95%;
-    padding: 35px 0;
+    width: 100%;
+    padding: 30px 5%;
 
     color: #fff;
 }
