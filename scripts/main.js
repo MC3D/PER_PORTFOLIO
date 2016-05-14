@@ -8,6 +8,7 @@
 //   }));
 
 
+
 $(function() {
   'use strict';
   var x = $('#nav').height() * 2;
@@ -46,5 +47,15 @@ $(function() {
     $('html, body').animate({
       scrollTop: ($('#section-contact').offset().top - x)
     }, 500); // 500 milliseconds
+  });
+
+  $('.toggle-button').on('click', function(){
+    var display = $('.nav-list').css('display');
+    if(display === 'none'){
+      $('.nav-list').css('display', 'flex');
+    } else {
+      $('.nav-list').css('display', 'none');
+    }
+
   });
 });

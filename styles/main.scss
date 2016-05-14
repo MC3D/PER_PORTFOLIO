@@ -8,20 +8,11 @@ $primary-accent-color: #fc5253;
 $tablet: new-breakpoint(min-width 480px max-width 965px);
 $desktop: new-breakpoint(min-width 965px);
 
-.fixed
-{
-    position: fixed !important;
-    top: 0;
-    bottom: auto !important;
-
-    background-color: #000;
-}
-
 html,
 body
 {
     font-family: $primary-font-family;
-
+    width: 100%;
     height: 100%;
 }
 
@@ -231,13 +222,14 @@ article
 
 #section-home h1
 {
-    font-size: 50px;
-    line-height: 1.2;
+    font-size: 1.375rem;
+    line-height: 1.925rem;
 
     position: relative;
     z-index: 10;
     top: 40%;
 
+    max-width: 845px;
     width: 65%;
     margin: 0 auto;
 
@@ -248,23 +240,81 @@ article
     color: #fff;
 }
 
+@media only screen and (min-width: 1170px)
+{
+    #section-home h1
+    {
+      font-size: 2.375rem;
+      line-height: 2.925rem;
+    }
+}
+
+
+
 #nav
 {
-    position: absolute;
+    position: fixed;
     z-index: 15;
-    bottom: 0;
-
+    top: 0;
+    background-color: #000;
     width: 100%;
-    padding: 30px 2%;
+    padding: 0 5px;
 
     color: #fff;
 }
 
+@media only screen and (min-width: 1170px){
+  #nav {
+    background: transparent;
+    position: absolute;
+    z-index: 15;
+    bottom: 0;
+    top: auto;
+    width: 100%;
+    padding: 20px 2%;
+
+    color: #fff;
+  }
+
+  .fixed
+  {
+      position: fixed !important;
+      top: 0 !important;
+      bottom: auto !important;
+      background-color: #000 !important;
+  }
+
+
+}
+
+.toggle-button {
+  color: $primary-accent-color;
+  background-color: transparent;
+  border: none;
+  font-size: 1.375rem;
+
+  &:active, &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  #nav .toggle-button {
+    display: none;
+  }
+}
+
 #nav .nav-list
 {
-    display: flex;
+    display: none;
 
-    justify-content: center;
+
+    -webkit-flex-direction: column;
+   flex-direction: column;
 }
 
 
@@ -273,6 +323,11 @@ article
     #nav .nav-list
     {
         float: right;
+        display: flex;
+        -webkit-flex-direction: row;
+       flex-direction: row;
+
+
     }
 }
 
@@ -280,7 +335,8 @@ article
 
 #nav li
 {
-    font-size: 14px;
+    font-size: 0.675rem;
+    line-height: 1.125;
     font-weight: 600;
 
     float: left;
@@ -300,6 +356,16 @@ article
         color: $primary-accent-color;
     }
 }
+
+@media only screen and (min-width: 1170px)
+{
+  #nav li {
+    font-size: 0.875rem;
+    line-height: 1.225;
+  }
+}
+
+
 
 #section-skills .icon
 {
