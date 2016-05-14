@@ -1,6 +1,5 @@
 $(function() {
   'use strict';
-  var x = $('#nav').height() * 3;
   var y = $('#nav').offset().top;
   console.log(y);
 
@@ -16,27 +15,31 @@ $(function() {
 
   $('#nav-link-skills').on('click', function() {
     $('.nav-list').css('display', 'none');
+    // var x = $('#nav').height() * 2;
     $('html, body').animate({
-      scrollTop: ($('#section-skills').offset().top - x)
+      scrollTop: ($('#section-skills').offset().top)
     }, 500); // 500 milliseconds
 
   });
 
   $('#nav-link-projects').on('click', function() {
+    $('.nav-list').css('display', 'none');
     $('html, body').animate({
-      scrollTop: ($('#section-projects').offset().top - x)
+      scrollTop: ($('#section-projects').offset().top)
     }, 500); // 500 milliseconds
   });
 
   $('#nav-link-timeline').on('click', function() {
+    $('.nav-list').css('display', 'none');
     $('html, body').animate({
-      scrollTop: ($('#section-timeline').offset().top - x)
+      scrollTop: ($('#section-timeline').offset().top)
     }, 500); // 500 milliseconds
   });
 
   $('#nav-link-contact').on('click', function() {
+    $('.nav-list').css('display', 'none');
     $('html, body').animate({
-      scrollTop: ($('#section-contact').offset().top - x)
+      scrollTop: ($('#section-contact').offset().top)
     }, 500); // 500 milliseconds
   });
 
