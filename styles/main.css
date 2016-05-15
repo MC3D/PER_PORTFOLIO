@@ -173,9 +173,9 @@ article {
   background-color: #f3f3f3; }
 
 .section header {
-  padding: 60px 0 30px;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 60px 0 30px; }
 
 @media only screen and (min-width: 1170) {
   .section header {
@@ -202,8 +202,8 @@ article {
 
 @media only screen and (min-width: 1170px) {
   .item {
-    width: 33.33%;
-    float: left; } }
+    float: left;
+    width: 33.33%; } }
 
 .text {
   padding-top: 15px;
@@ -225,6 +225,9 @@ article {
   position: relative;
   height: 100%;
   background: url(./../images/image-home.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover; }
   #section-home:after {
     position: absolute;
@@ -245,8 +248,8 @@ article {
   position: relative;
   z-index: 10;
   top: 50%;
-  max-width: 845px;
   width: 65%;
+  max-width: 845px;
   margin: 0 auto;
   transform: translateY(-50%);
   text-align: center;
@@ -262,21 +265,21 @@ article {
   position: fixed;
   z-index: 15;
   top: 0;
-  background-color: #000;
   width: 100%;
   padding: 3px 5px;
-  color: #fff; }
+  color: #fff;
+  background-color: #000; }
 
 @media only screen and (min-width: 1170px) {
   #nav {
-    background: transparent;
     position: absolute;
     z-index: 15;
-    bottom: 0;
     top: auto;
+    bottom: 0;
     width: 100%;
     padding: 20px 2%;
-    color: #fff; }
+    color: #fff;
+    background: transparent; }
   .fixed {
     position: fixed !important;
     top: 0 !important;
@@ -284,10 +287,10 @@ article {
     background-color: #000 !important; } }
 
 .toggle-button {
+  font-size: 1.375rem;
   color: #fff;
-  background-color: transparent;
   border: none;
-  font-size: 1.375rem; }
+  background-color: transparent; }
   .toggle-button:active, .toggle-button:focus {
     outline: none; }
   .toggle-button:hover {
@@ -299,21 +302,21 @@ article {
 
 #nav .nav-list {
   display: none;
+  flex-direction: column;
   padding: 2px 6px;
-  -webkit-flex-direction: column;
-  flex-direction: column; }
+  -webkit-flex-direction: column; }
 
 @media only screen and (min-width: 1170px) {
   #nav .nav-list {
-    float: right;
     display: flex !important;
-    -webkit-flex-direction: row;
-    flex-direction: row; } }
+    float: right;
+    flex-direction: row;
+    -webkit-flex-direction: row; } }
 
 #nav li {
-  font-size: 0.675rem;
-  line-height: 1.125;
+  font-size: .675rem;
   font-weight: 600;
+  line-height: 1.125;
   float: left;
   margin: 10px 0;
   letter-spacing: .15em;
@@ -326,7 +329,7 @@ article {
 
 @media only screen and (min-width: 1170px) {
   #nav li {
-    font-size: 0.875rem;
+    font-size: .875rem;
     line-height: 1.225;
     margin: 0 10px; } }
 
@@ -341,8 +344,8 @@ article {
 
 @media only screen and (min-width: 1170px) {
   #section-skills .icon {
-    margin: 0 10% 25px 0;
-    font-size: 60px; }
+    font-size: 60px;
+    margin: 0 10% 25px 0; }
   #section-skills .fa-html5 {
     font-size: 70px;
     margin-bottom: 15px; } }
@@ -363,6 +366,9 @@ article {
   width: 100%;
   height: 220px;
   margin: 0 auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover; }
   .project .thumbnail:after {
     position: absolute;
@@ -401,21 +407,23 @@ article {
     transition: color .4s;
     color: #fc5253; }
 
-.thumbnail-one {
-  background: url(./../images/thumbnail-one.jpeg) no-repeat center center;
+.thumbnail {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover; }
+
+.thumbnail-one {
+  background: url(./../images/thumbnail-one.jpeg) no-repeat center center; }
 
 .thumbnail-two {
-  background: url(./../images/thumbnail-one.jpeg) no-repeat center center;
-  background-size: cover; }
+  background: url(./../images/thumbnail-one.jpeg) no-repeat center center; }
 
 .thumbnail-three {
-  background: url(./../images/thumbnail-one.jpeg) no-repeat center center;
-  background-size: cover; }
+  background: url(./../images/thumbnail-one.jpeg) no-repeat center center; }
 
 .thumbnail-four {
-  background: url(./../images/thumbnail-one.jpeg) no-repeat center center;
-  background-size: cover; }
+  background: url(./../images/thumbnail-one.jpeg) no-repeat center center; }
 
 .timeline {
   position: relative;

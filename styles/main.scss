@@ -12,6 +12,7 @@ html,
 body
 {
     font-family: $primary-font-family;
+
     width: 100%;
     height: 100%;
 }
@@ -91,17 +92,19 @@ article
     content: '';
 }
 
-.timeline .icon-timeline-mobile {
-  font-size: 28px;
+.timeline .icon-timeline-mobile
+{
+    font-size: 28px;
 }
 
 // this isn't working
 
-@media only screen and (min-width: 1170){
-  .timeline .icon-timeline-mobile
-  {
-      font-size: 36px;
-  }
+@media only screen and (min-width: 1170)
+{
+    .timeline .icon-timeline-mobile
+    {
+        font-size: 36px;
+    }
 }
 
 #sections
@@ -123,10 +126,12 @@ article
     text-align:         center;
 }
 
-@media only screen and (min-width: 1170px){
-  .section {
-    padding-bottom: 60px;
-  }
+@media only screen and (min-width: 1170px)
+{
+    .section
+    {
+        padding-bottom: 60px;
+    }
 }
 
 .section-grey
@@ -134,19 +139,19 @@ article
     background-color: #f3f3f3;
 }
 
-.section header {
-  padding: 60px 0 30px;
-  width: 100%;
-  margin: 0 auto;
+.section header
+{
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 0 30px;
 }
 
-@media only screen and (min-width: 1170){
-  .section header
-  {
-
-
-      padding: 75px 0;
-  }
+@media only screen and (min-width: 1170)
+{
+    .section header
+    {
+        padding: 75px 0;
+    }
 }
 
 
@@ -170,40 +175,38 @@ article
     color: #737373;
 }
 
-@media only screen and (min-width: 1170px){
-  .section header {
-      width: 65%;
-  }
-
-  .section header h2 {
-    font-size: 2.1875rem;
-  }
-
-  .section header p {
-    font-size: 1.25rem;
-  }
-
-}
-
-.item
+@media only screen and (min-width: 1170px)
 {
+    .section header
+    {
+        width: 65%;
+    }
 
+    .section header h2
+    {
+        font-size: 2.1875rem;
+    }
 
-
+    .section header p
+    {
+        font-size: 1.25rem;
+    }
 }
+
+
 
 @media only screen and (min-width: 1170px)
 {
     .item
     {
-        width: 33.33%;
         float: left;
+
+        width: 33.33%;
     }
 }
 
 .text
 {
-
     padding-top: 15px;
 
     text-align: -webkit-auto;
@@ -238,7 +241,10 @@ article
     height: 100%;
 
     background: url(./../images/image-home.jpeg) no-repeat center center fixed;
-    background-size: cover;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
 
     &:after
     {
@@ -269,8 +275,8 @@ article
     z-index: 10;
     top: 50%;
 
-    max-width: 845px;
     width: 65%;
+    max-width: 845px;
     margin: 0 auto;
 
     transform: translateY(-50%);
@@ -284,8 +290,8 @@ article
 {
     #section-home h1
     {
-      font-size: 2.375rem;
-      line-height: 2.925rem;
+        font-size: 2.375rem;
+        line-height: 2.925rem;
     }
 }
 
@@ -296,65 +302,76 @@ article
     position: fixed;
     z-index: 15;
     top: 0;
-    background-color: #000;
+
     width: 100%;
     padding: 3px 5px;
 
     color: #fff;
+    background-color: #000;
 }
 
-@media only screen and (min-width: 1170px){
-  #nav {
-    background: transparent;
-    position: absolute;
-    z-index: 15;
-    bottom: 0;
-    top: auto;
-    width: 100%;
-    padding: 20px 2%;
+@media only screen and (min-width: 1170px)
+{
+    #nav
+    {
+        position: absolute;
+        z-index: 15;
+        top: auto;
+        bottom: 0;
+
+        width: 100%;
+        padding: 20px 2%;
+
+        color: #fff;
+        background: transparent;
+    }
+
+    .fixed
+    {
+        position: fixed !important;
+        top: 0 !important;
+        bottom: auto !important;
+
+        background-color: #000 !important;
+    }
+}
+
+.toggle-button
+{
+    font-size: 1.375rem;
 
     color: #fff;
-  }
+    border: none;
+    background-color: transparent;
 
-  .fixed
-  {
-      position: fixed !important;
-      top: 0 !important;
-      bottom: auto !important;
-      background-color: #000 !important;
-  }
+    &:active,
+    &:focus
+    {
+        outline: none;
+    }
 
-
+    &:hover
+    {
+        cursor: pointer;
+    }
 }
 
-.toggle-button {
-  color: #fff;
-  background-color: transparent;
-  border: none;
-  font-size: 1.375rem;
-
-  &:active, &:focus {
-    outline: none;
-  }
-
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-@media only screen and (min-width: 1170px) {
-  #nav .toggle-button {
-    display: none;
-  }
+@media only screen and (min-width: 1170px)
+{
+    #nav .toggle-button
+    {
+        display: none;
+    }
 }
 
 #nav .nav-list
 {
     display: none;
+            flex-direction: column;
+
     padding: 2px 6px;
 
     -webkit-flex-direction: column;
-   flex-direction: column;
 }
 
 
@@ -362,12 +379,11 @@ article
 {
     #nav .nav-list
     {
-        float: right;
         display: flex !important;
+        float: right;
+                flex-direction: row;
+
         -webkit-flex-direction: row;
-       flex-direction: row;
-
-
     }
 }
 
@@ -375,9 +391,9 @@ article
 
 #nav li
 {
-    font-size: 0.675rem;
-    line-height: 1.125;
+    font-size: .675rem;
     font-weight: 600;
+    line-height: 1.125;
 
     float: left;
 
@@ -399,11 +415,13 @@ article
 
 @media only screen and (min-width: 1170px)
 {
-  #nav li {
-    font-size: 0.875rem;
-    line-height: 1.225;
-    margin: 0 10px;
-  }
+    #nav li
+    {
+        font-size: .875rem;
+        line-height: 1.225;
+
+        margin: 0 10px;
+    }
 }
 
 #section-skills .icon
@@ -415,21 +433,28 @@ article
     margin: 0 0 15px;
 }
 
-#section-skills .fa-html5 {
-  font-size: 48px;
-  margin-bottom: 15px;
+#section-skills .fa-html5
+{
+    font-size: 48px;
+
+    margin-bottom: 15px;
 }
 
-@media only screen and (min-width: 1170px){
-  #section-skills .icon {
-      margin: 0 10% 25px 0;
-      font-size: 60px;
-  }
+@media only screen and (min-width: 1170px)
+{
+    #section-skills .icon
+    {
+        font-size: 60px;
 
-  #section-skills .fa-html5 {
-    font-size: 70px;
-    margin-bottom: 15px;
-  }
+        margin: 0 10% 25px 0;
+    }
+
+    #section-skills .fa-html5
+    {
+        font-size: 70px;
+
+        margin-bottom: 15px;
+    }
 }
 
 
@@ -445,11 +470,12 @@ article
     letter-spacing: .5px;
 }
 
-@media only screen and (min-width: 1170px){
-  .project p{
-    margin-left: 5%;
-  }
-
+@media only screen and (min-width: 1170px)
+{
+    .project p
+    {
+        margin-left: 5%;
+    }
 }
 
 .project .thumbnail
@@ -460,7 +486,10 @@ article
     height: 220px;
     margin: 0 auto;
 
-    background-size: cover;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
 
     &:after
     {
@@ -475,10 +504,12 @@ article
     }
 }
 
-@media only screen and (min-width: 1170px){
-  .project .thumbnail {
-    width: 90%;
-  }
+@media only screen and (min-width: 1170px)
+{
+    .project .thumbnail
+    {
+        width: 90%;
+    }
 }
 
 .project-title
@@ -524,10 +555,21 @@ article
     }
 }
 
+.thumbnail
+{
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+
 .thumbnail-one
 {
     background: url(./../images/thumbnail-one.jpeg) no-repeat center center;
-    background-size: cover;
+    //     -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
 
     &:after
     {
@@ -538,7 +580,10 @@ article
 .thumbnail-two
 {
     background: url(./../images/thumbnail-one.jpeg) no-repeat center center;
-    background-size: cover;
+    //     -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
 
     &:after
     {
@@ -549,7 +594,10 @@ article
 .thumbnail-three
 {
     background: url(./../images/thumbnail-one.jpeg) no-repeat center center;
-    background-size: cover;
+    //     -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
 
     &:after
     {
@@ -560,7 +608,10 @@ article
 .thumbnail-four
 {
     background: url(./../images/thumbnail-one.jpeg) no-repeat center center;
-    background-size: cover;
+    //     -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
 
     &:after
     {
