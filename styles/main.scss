@@ -154,9 +154,6 @@ article
     }
 }
 
-
-
-
 .section header h2
 {
     font-size: 1.25rem;
@@ -193,8 +190,6 @@ article
     }
 }
 
-
-
 @media only screen and (min-width: 1170px)
 {
     .item
@@ -223,8 +218,6 @@ article
     }
 }
 
-
-
 .text > p:nth-of-type(2)
 {
     font-size: 16px;
@@ -237,7 +230,7 @@ article
 #section-home
 {
     position: relative;
-
+    overflow: hidden;
     height: 100%;
 
     background: url(./../images/image-home.jpeg) no-repeat center center fixed;
