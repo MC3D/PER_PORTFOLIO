@@ -292,7 +292,9 @@ article {
     background-color: #000 !important; } }
 
 #nav div {
-  position: relative; }
+  position: relative;
+  text-align: -webkit-right;
+  text-align: right; }
 
 .toggle-button {
   font-size: 1.375rem;
@@ -321,7 +323,6 @@ article {
   #nav .nav-list {
     position: static;
     display: flex !important;
-    float: right;
     flex-direction: row;
     background-color: transparent;
     -webkit-justify-content: flex-end;

@@ -363,6 +363,8 @@ article
 #nav div
 {
     position: relative;
+    text-align: -webkit-right;
+    text-align: right;
 }
 
 .toggle-button
@@ -417,7 +419,7 @@ article
         position: static;
 
         display: flex !important;
-        float: right;
+        
                 flex-direction: row;
 
         background-color: transparent;
