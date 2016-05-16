@@ -241,7 +241,8 @@ article {
     background: rgba(0, 0, 0, 0.5); }
 
 @media only screen and (min-width: 1170px) {
-  background-attachment: fixed; }
+  #section-home {
+    background-attachment: fixed; } }
 
 #section-home .overlay {
   height: 100%; }
