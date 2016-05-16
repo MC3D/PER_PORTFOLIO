@@ -1,24 +1,6 @@
 $(function() {
   'use strict';
   var y = $('#nav').offset().top;
-  console.log(y);
-
-  //on scolling, show/animate timeline events when enter the viewport
-  $(window).on('scroll', function() {
-    if (y <= $(window).scrollTop()) {
-      // if so, add the fixed class
-      $('#nav').addClass('fixed');
-    } else {
-      // otherwise remove it
-      $('#nav').removeClass('fixed');
-    }
-
-    (!window.requestAnimationFrame) ? setTimeout(function() {
-      showEvents(timelineEvents, offset);
-    }, 100): window.requestAnimationFrame(function() {
-      showEvents(timelineEvents, offset);
-    });
-  });
 
   $('#nav-link-skills').on('click', function() {
     $('.nav-list').css('display', 'none');
@@ -81,5 +63,21 @@ $(function() {
 
   //hide timeline events which are outside the viewport
   hideEvents(timelineEvents, offset);
+
+  $(window).on('scroll', function() {
+    if (y <= $(window).scrollTop()) {
+      // if so, add the fixed class
+      $('#nav').addClass('fixed');
+    } else {
+      // otherwise remove it
+      $('#nav').removeClass('fixed');
+    }
+
+    (!window.requestAnimationFrame) ? setTimeout(function() {
+      showEvents(timelineEvents, offset);
+    }, 100): window.requestAnimationFrame(function() {
+      showEvents(timelineEvents, offset);
+    });
+  });
 
 });
