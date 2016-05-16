@@ -256,6 +256,7 @@ article
     height: 100%;
 
     background: url(./../images/image-home.jpeg) no-repeat center fixed;
+    background-attachment: fixed;
     -webkit-background-size: cover;
        -moz-background-size: cover;
          -o-background-size: cover;
@@ -354,8 +355,6 @@ article
 #nav div
 {
     position: relative;
-    text-align: -webkit-right;
-    text-align: right;
 }
 
 .toggle-button
@@ -396,9 +395,8 @@ article
     // position: absolute;
 
     -webkit-flex-direction: column;
-    flex-direction: column;
-    // -webkit-align-items: flex-end;
-    //         align-items: flex-end;
+    -webkit-align-items: flex-end;
+            align-items: flex-end;
     // height: 100%;
     // background-color: #000;
 }
@@ -411,6 +409,7 @@ article
         position: static;
 
         display: flex !important;
+        float: right;
                 flex-direction: row;
 
         background-color: transparent;
