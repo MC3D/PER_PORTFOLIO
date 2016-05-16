@@ -1,36 +1,52 @@
 $(function() {
   'use strict';
   var y = $('#nav').offset().top;
+  var x = 0;
 
-  $('#nav-link-skills').on('click', function() {
-    $('.nav-list').css('display', 'none');
-    // var x = $('#nav').height() * 2;
-    $('html, body').animate({
-      scrollTop: ($('#section-skills').offset().top)
-    }, 500); // 500 milliseconds
-
-  });
-
-  $('#nav-link-projects').on('click', function() {
+  $('.nav-link').on('click', function(event) {
+    var text = 'section-' + (event.target.innerText).toLowerCase();
+    if($(window).width() >= 1170) {
+      x = $('#nav').height();
+    }
     $('.nav-list').css('display', 'none');
     $('html, body').animate({
-      scrollTop: ($('#section-projects').offset().top)
+      scrollTop: ($('#' + text).offset().top - x)
     }, 500); // 500 milliseconds
+    x = 0;
   });
 
-  $('#nav-link-timeline').on('click', function() {
-    $('.nav-list').css('display', 'none');
-    $('html, body').animate({
-      scrollTop: ($('#section-timeline').offset().top)
-    }, 500); // 500 milliseconds
-  });
-
-  $('#nav-link-contact').on('click', function() {
-    $('.nav-list').css('display', 'none');
-    $('html, body').animate({
-      scrollTop: ($('#section-contact').offset().top)
-    }, 500); // 500 milliseconds
-  });
+  // $('#nav-link-projects').on('click', function() {
+  //   if($(window).width() >= 1170) {
+  //     x = $('#nav').height();
+  //   }
+  //   $('.nav-list').css('display', 'none');
+  //   $('html, body').animate({
+  //     scrollTop: ($('#section-projects').offset().top - x)
+  //   }, 500); // 500 milliseconds
+  //   x = 0;
+  // });
+  //
+  // $('#nav-link-timeline').on('click', function() {
+  //   if($(window).width() >= 1170) {
+  //     x = $('#nav').height();
+  //   }
+  //   $('.nav-list').css('display', 'none');
+  //   $('html, body').animate({
+  //     scrollTop: ($('#section-timeline').offset().top - x)
+  //   }, 500); // 500 milliseconds
+  //   x = 0;
+  // });
+  //
+  // $('#nav-link-contact').on('click', function() {
+  //   if($(window).width() >= 1170) {
+  //     x = $('#nav').height();
+  //   }
+  //   $('.nav-list').css('display', 'none');
+  //   $('html, body').animate({
+  //     scrollTop: ($('#section-contact').offset().top - x)
+  //   }, 500); // 500 milliseconds
+  //   x = 0;
+  // });
 
   $('.toggle-button').on('click', function() {
     var display = $('.nav-list').css('display');
