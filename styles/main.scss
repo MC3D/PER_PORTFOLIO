@@ -374,6 +374,7 @@ article
     color: #fff;
     border: none;
     background-color: transparent;
+    padding-right: 2.5px;
 
     &:active,
     &:focus
@@ -419,7 +420,7 @@ article
         position: static;
 
         display: flex !important;
-        
+
                 flex-direction: row;
 
         background-color: transparent;

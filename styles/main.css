@@ -300,7 +300,8 @@ article {
   font-size: 1.375rem;
   color: #fff;
   border: none;
-  background-color: transparent; }
+  background-color: transparent;
+  padding-right: 2.5px; }
   .toggle-button:active, .toggle-button:focus {
     outline: none; }
   .toggle-button:hover {
