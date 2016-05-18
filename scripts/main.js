@@ -15,39 +15,6 @@ $(function() {
     x = 0;
   });
 
-  // $('#nav-link-projects').on('click', function() {
-  //   if($(window).width() >= 1170) {
-  //     x = $('#nav').height();
-  //   }
-  //   $('.nav-list').css('display', 'none');
-  //   $('html, body').animate({
-  //     scrollTop: ($('#section-projects').offset().top - x)
-  //   }, 500); // 500 milliseconds
-  //   x = 0;
-  // });
-  //
-  // $('#nav-link-timeline').on('click', function() {
-  //   if($(window).width() >= 1170) {
-  //     x = $('#nav').height();
-  //   }
-  //   $('.nav-list').css('display', 'none');
-  //   $('html, body').animate({
-  //     scrollTop: ($('#section-timeline').offset().top - x)
-  //   }, 500); // 500 milliseconds
-  //   x = 0;
-  // });
-  //
-  // $('#nav-link-contact').on('click', function() {
-  //   if($(window).width() >= 1170) {
-  //     x = $('#nav').height();
-  //   }
-  //   $('.nav-list').css('display', 'none');
-  //   $('html, body').animate({
-  //     scrollTop: ($('#section-contact').offset().top - x)
-  //   }, 500); // 500 milliseconds
-  //   x = 0;
-  // });
-
   $('.toggle-button').on('click', function() {
     var display = $('.nav-list').css('display');
     if (display === 'none') {

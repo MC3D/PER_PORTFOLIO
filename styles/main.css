@@ -298,10 +298,10 @@ article {
 
 .toggle-button {
   font-size: 1.375rem;
+  padding-right: 2.5px;
   color: #fff;
   border: none;
-  background-color: transparent;
-  padding-right: 2.5px; }
+  background-color: transparent; }
   .toggle-button:active, .toggle-button:focus {
     outline: none; }
   .toggle-button:hover {
@@ -404,11 +404,6 @@ article {
   position: relative;
   top: 50%;
   transform: translateY(-50%); }
-  .project-title h1 {
-    line-height: .1;
-    color: #fff; }
-  .project-title span {
-    font-size: 5px; }
 
 .project-links {
   position: absolute;
@@ -432,15 +427,38 @@ article {
 
 .thumbnail-one {
   background: url(./../images/thumbnail-one.jpeg) no-repeat center center; }
+  .thumbnail-one h1 {
+    font: 18px/1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    line-height: .1;
+    color: #fff; }
+  .thumbnail-one span {
+    font-size: 5px; }
 
 .thumbnail-two {
-  background: url(./../images/thumbnail-one.jpeg) no-repeat center center; }
+  background: url(./../images/thumbnail-two.jpeg) no-repeat center center;
+  background-position: 0 18%; }
+  .thumbnail-two:after {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background: rgba(0, 0, 0, 0.1); }
 
 .thumbnail-three {
   background: url(./../images/thumbnail-one.jpeg) no-repeat center center; }
 
 .thumbnail-four {
   background: url(./../images/thumbnail-one.jpeg) no-repeat center center; }
+
+#section-timeline header::after {
+  font-size: larger;
+  font-weight: 300;
+  display: block;
+  clear: both;
+  content: '2016'; }
 
 .timeline {
   position: relative;
@@ -497,16 +515,6 @@ article {
   background-color: #fc5253;
   align-items: center;
   justify-content: center; }
-
-.timeline-icon img {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  display: block;
-  width: 24px;
-  height: 24px;
-  margin-top: -12px;
-  margin-left: -12px; }
 
 .timeline-icon.cd-picture {
   background: #75ce66; }
