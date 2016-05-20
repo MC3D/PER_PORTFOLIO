@@ -1,7 +1,7 @@
 // @import '../../bower_components/bourbon/dist/bourbon';
 // @import '../../bower_components/neat/app/assets/stylesheets/neat';
 @import 'reset.scss';
-@import 'animations.scss'
+@import 'animations.scss';
 
 $primary-font-family: 'Istok Web', sans-serif;
 $primary-accent-color: #fc5253;
@@ -15,6 +15,7 @@ body
     font-family: $primary-font-family;
 
     width: 100%;
+    max-width: 1800px;
     height: 100%;
 }
 
@@ -98,15 +99,7 @@ article
     font-size: 28px;
 }
 
-// this isn't working
-
-@media only screen and (min-width: 1170)
-{
-    .timeline .icon-timeline-mobile
-    {
-        font-size: 36px;
-    }
-}
+/// #sections //////////////////////////////////////////////////////////////////
 
 #sections
 {
@@ -127,14 +120,6 @@ article
     text-align:         center;
 }
 
-@media only screen and (min-width: 1170px)
-{
-    .section
-    {
-        padding-bottom: 60px;
-    }
-}
-
 .section-grey
 {
     background-color: #f3f3f3;
@@ -145,14 +130,6 @@ article
     width: 100%;
     margin: 0 auto;
     padding: 60px 0 30px;
-}
-
-@media only screen and (min-width: 1170)
-{
-    .section header
-    {
-        padding: 75px 0;
-    }
 }
 
 .section header h2
@@ -173,34 +150,6 @@ article
     color: #737373;
 }
 
-@media only screen and (min-width: 1170px)
-{
-    .section header
-    {
-        width: 65%;
-    }
-
-    .section header h2
-    {
-        font-size: 2.1875rem;
-    }
-
-    .section header p
-    {
-        font-size: 1.25rem;
-    }
-}
-
-@media only screen and (min-width: 1170px)
-{
-    .item
-    {
-        float: left;
-
-        width: 33.33%;
-    }
-}
-
 .text
 {
     padding-top: 15px;
@@ -209,14 +158,6 @@ article
     text-align:         auto;
 
     border-top: 2px solid #fff;
-}
-
-@media only screen and (min-width: 1170px)
-{
-    .text
-    {
-        width: 90%;
-    }
 }
 
 .text > p:nth-of-type(2)
@@ -228,7 +169,9 @@ article
     color: #737373;
 }
 
-#section-home
+/// #section-header ////////////////////////////////////////////////////////////////////
+
+#section-header
 {
     position: relative;
 
@@ -257,21 +200,12 @@ article
     }
 }
 
-@media only screen and (min-width: 1170px)
-{
-    #section-home
-    {
-        background-attachment: fixed;
-    }
-}
-
-
-#section-home .overlay
+#section-header .overlay
 {
     height: 100%;
 }
 
-#section-home h1
+#section-header h1
 {
     font-size: 1.375rem;
     line-height: 1.925rem;
@@ -291,17 +225,6 @@ article
     color: #fff;
 }
 
-@media only screen and (min-width: 1170px)
-{
-    #section-home h1
-    {
-        font-size: 2.375rem;
-        line-height: 2.925rem;
-    }
-}
-
-
-
 #nav
 {
     position: fixed;
@@ -313,32 +236,6 @@ article
 
     color: #fff;
     background-color: #000;
-}
-
-@media only screen and (min-width: 1170px)
-{
-    #nav
-    {
-        position: absolute;
-        z-index: 15;
-        top: auto;
-        bottom: 0;
-
-        width: 100%;
-        padding: 20px 2%;
-
-        color: #fff;
-        background: transparent;
-    }
-
-    .fixed
-    {
-        position: fixed !important;
-        top: 0 !important;
-        bottom: auto !important;
-
-        background-color: #000 !important;
-    }
 }
 
 #nav div
@@ -371,14 +268,6 @@ article
     }
 }
 
-@media only screen and (min-width: 1170px)
-{
-    #nav .toggle-button
-    {
-        display: none;
-    }
-}
-
 #nav .nav-list
 {
     display: none;
@@ -394,26 +283,6 @@ article
     // height: 100%;
     // background-color: #000;
 }
-
-
-@media only screen and (min-width: 1170px)
-{
-    #nav .nav-list
-    {
-        position: static;
-
-        display: flex !important;
-                flex-direction: row;
-
-        background-color: transparent;
-
-        -webkit-justify-content: flex-end;
-                justify-content: flex-end;
-        -webkit-flex-direction: row;
-    }
-}
-
-
 
 #nav li
 {
@@ -439,16 +308,7 @@ article
     }
 }
 
-@media only screen and (min-width: 1170px)
-{
-    #nav li
-    {
-        font-size: .875rem;
-        line-height: 1.225;
-
-        margin: 0 10px;
-    }
-}
+/// #section-skills ////////////////////////////////////////////////////////////
 
 #section-skills .icon
 {
@@ -466,24 +326,7 @@ article
     margin-bottom: 15px;
 }
 
-@media only screen and (min-width: 1170px)
-{
-    #section-skills .icon
-    {
-        font-size: 60px;
-
-        margin: 0 10% 25px 0;
-    }
-
-    #section-skills .fa-html5
-    {
-        font-size: 70px;
-
-        margin-bottom: 15px;
-    }
-}
-
-
+/// #section-projects //////////////////////////////////////////////////////////
 
 .project p
 {
@@ -494,14 +337,6 @@ article
 
     text-align: left;
     letter-spacing: .5px;
-}
-
-@media only screen and (min-width: 1170px)
-{
-    .project p
-    {
-        margin-left: 5%;
-    }
 }
 
 .project .thumbnail
@@ -530,24 +365,12 @@ article
     }
 }
 
-@media only screen and (min-width: 1170px)
-{
-    .project .thumbnail
-    {
-        width: 90%;
-    }
-}
-
 .project-title
 {
     position: relative;
     top: 50%;
 
     transform: translateY(-50%);
-
-
-
-
 }
 
 .project-links
@@ -595,11 +418,11 @@ article
         line-height: .1;
 
         color: #fff;
-
     }
 
-    span {
-      font-size: 5px;
+    span
+    {
+        font-size: 5px;
     }
 
     &:after
@@ -630,10 +453,6 @@ article
 
         background: rgba(0,0,0,.1);
     }
-
-
-
-
 
     &:after
     {
@@ -670,6 +489,8 @@ article
     }
 }
 
+/// #section-timeline //////////////////////////////////////////////////////////
+
 #section-timeline header::after
 {
     font-size: larger;
@@ -702,15 +523,6 @@ article
 
     background: #fff;
 }
-@media only screen and (min-width: 1170px)
-{
-    .timeline::before
-    {
-        left: 50%;
-
-        margin-left: -2px;
-    }
-}
 
 .timeline-event
 {
@@ -735,21 +547,6 @@ article
 {
     margin-bottom: 0;
 }
-@media only screen and (min-width: 1170px)
-{
-    .timeline-event
-    {
-        margin: 4em 0;
-    }
-    .timeline-event:first-child
-    {
-        margin-top: 0;
-    }
-    .timeline-event:last-child
-    {
-        margin-bottom: 0;
-    }
-}
 
 .timeline-icon
 {
@@ -769,6 +566,20 @@ article
     align-items: center;
     justify-content: center;;
 }
+
+.timeline-icon.is-hidden
+{
+    visibility: hidden;
+}
+.timeline-icon.bounce-in
+{
+    visibility: visible;
+
+    -webkit-animation: cd-bounce-1 .6s;
+       -moz-animation: cd-bounce-1 .6s;
+            animation: cd-bounce-1 .6s;
+}
+
 // .timeline-icon img
 // {
 //     position: relative;
@@ -795,37 +606,6 @@ article
 {
     background: #f0ca45;
 }
-@media only screen and (min-width: 1170px)
-{
-    .timeline-icon
-    {
-        left: 50%;
-
-        width: 60px;
-        height: 60px;
-        margin-left: -30px;
-        /* Force Hardware Acceleration in WebKit */
-
-        -webkit-transform: translateZ(0);
-        // defines whether or not an element should be visible when not facing the screen
-
-        -webkit-backface-visibility: hidden;
-    }
-    .timeline-icon.is-hidden
-    {
-        visibility: hidden;
-    }
-    .timeline-icon.bounce-in
-    {
-        visibility: visible;
-
-        -webkit-animation: cd-bounce-1 .6s;
-           -moz-animation: cd-bounce-1 .6s;
-                animation: cd-bounce-1 .6s;
-    }
-}
-
-
 
 .timeline-content
 {
@@ -903,6 +683,30 @@ article
     border: 7px solid transparent;
     border-right: 7px solid white;
 }
+
+.timeline-content.is-hidden
+{
+    visibility: hidden;
+}
+.timeline-content.bounce-in
+{
+    visibility: visible;
+
+    -webkit-animation: cd-bounce-2 .6s;
+       -moz-animation: cd-bounce-2 .6s;
+            animation: cd-bounce-2 .6s;
+}
+
+/* inverse bounce effect on even content blocks */
+.timeline-event:nth-child(even) .timeline-content.bounce-in
+{
+    -webkit-animation: cd-bounce-2-inverse .6s;
+       -moz-animation: cd-bounce-2-inverse .6s;
+            animation: cd-bounce-2-inverse .6s;
+}
+
+/// min-width 768px ////////////////////////////////////////////////////////////
+
 @media only screen and (min-width: 768px)
 {
     .timeline-content h2
@@ -922,8 +726,185 @@ article
         font-size: .875rem;
     }
 }
-@media only screen and (min-width: 1170px)
+
+/// min-width 1020px ///////////////////////////////////////////////////////////
+
+@media only screen and (min-width: 1020px)
 {
+    .timeline .icon-timeline-mobile
+    {
+        font-size: 36px;
+    }
+
+    .section
+    {
+        padding-bottom: 60px;
+    }
+
+    .section header
+    {
+        padding: 75px 0;
+    }
+
+    .section header
+    {
+        width: 65%;
+    }
+
+    .section header h2
+    {
+        font-size: 2.1875rem;
+    }
+
+    .section header p
+    {
+        font-size: 1.25rem;
+    }
+
+    .item
+    {
+        float: left;
+
+        width: 33.33%;
+    }
+
+    .text
+    {
+        width: 90%;
+    }
+
+    #section-header
+    {
+        background-attachment: fixed;
+    }
+
+    #section-header h1
+    {
+        font-size: 2.375rem;
+        line-height: 2.925rem;
+    }
+
+    #nav
+    {
+        position: absolute;
+        z-index: 15;
+        top: auto;
+        bottom: 0;
+
+        width: 100%;
+        padding: 20px 2%;
+
+        color: #fff;
+        background: transparent;
+    }
+
+    .fixed
+    {
+        position: fixed !important;
+        top: 0 !important;
+        bottom: auto !important;
+
+        background-color: #000 !important;
+    }
+
+    #nav .toggle-button
+    {
+        display: none;
+    }
+
+    #nav .nav-list
+    {
+        position: static;
+
+        display: flex !important;
+                flex-direction: row;
+
+        background-color: transparent;
+
+        -webkit-justify-content: flex-end;
+                justify-content: flex-end;
+        -webkit-flex-direction: row;
+    }
+
+    #nav li
+    {
+        font-size: .875rem;
+        line-height: 1.225;
+
+        margin: 0 10px;
+    }
+
+    #section-skills .icon
+    {
+        font-size: 60px;
+
+        margin: 0 10% 25px 0;
+    }
+
+    #section-skills .fa-html5
+    {
+        font-size: 70px;
+
+        margin-bottom: 15px;
+    }
+
+    .project p
+    {
+        margin-left: 5%;
+    }
+
+    .project .thumbnail
+    {
+        width: 90%;
+    }
+
+    .timeline::before
+    {
+        left: 50%;
+
+        margin-left: -2px;
+    }
+
+    .timeline-event
+    {
+        margin: 4em 0;
+    }
+    .timeline-event:first-child
+    {
+        margin-top: 0;
+    }
+    .timeline-event:last-child
+    {
+        margin-bottom: 0;
+    }
+
+    .timeline-icon
+    {
+        left: 50%;
+
+        width: 60px;
+        height: 60px;
+        margin-left: -30px;
+        /* Force Hardware Acceleration in WebKit */
+
+        -webkit-transform: translateZ(0);
+        // defines whether or not an element should be visible when not facing the screen
+
+        -webkit-backface-visibility: hidden;
+    }
+    .timeline-icon.is-hidden
+    {
+        visibility: hidden;
+    }
+    .timeline-icon.bounce-in
+    {
+        visibility: visible;
+
+        -webkit-animation: cd-bounce-1 .6s;
+           -moz-animation: cd-bounce-1 .6s;
+                animation: cd-bounce-1 .6s;
+    }
+
     .timeline-content
     {
         width: 45%;
@@ -989,10 +970,7 @@ article
            -moz-animation: cd-bounce-2 .6s;
                 animation: cd-bounce-2 .6s;
     }
-}
 
-@media only screen and (min-width: 1170px)
-{
     /* inverse bounce effect on even content blocks */
     .timeline-event:nth-child(even) .timeline-content.bounce-in
     {
