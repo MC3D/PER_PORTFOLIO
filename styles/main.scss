@@ -1,32 +1,13 @@
 // @import '../../bower_components/bourbon/dist/bourbon';
 // @import '../../bower_components/neat/app/assets/stylesheets/neat';
 @import 'reset.scss';
+@import 'animations.scss'
 
 $primary-font-family: 'Istok Web', sans-serif;
 $primary-accent-color: #fc5253;
 
 $tablet: new-breakpoint(min-width 480px max-width 965px);
 $desktop: new-breakpoint(min-width 965px);
-
-@mixin keyframes( $animationName )
-{
-    @-webkit-keyframes #{$animationName}
-    {
-        @content;
-    }
-    @-moz-keyframes #{$animationName}
-    {
-        @content;
-    }
-    @-o-keyframes #{$animationName}
-    {
-        @content;
-    }
-    @keyframes #{$animationName}
-    {
-        @content;
-    }
-}
 
 html,
 body
@@ -700,8 +681,6 @@ article
     content: '2016';
 }
 
-// https://codyhouse.co/gem/vertical-timeline/
-// author Sebastiano Guerriero
 .timeline
 {
     position: relative;
@@ -846,27 +825,7 @@ article
     }
 }
 
-@include keyframes (cd-bounce-1)
-{
-    0%
-    {
-        -webkit-transform: scale(.5);
 
-        opacity: 0;
-    }
-
-    60%
-    {
-        -webkit-transform: scale(1.2);
-
-        opacity: 1;
-    }
-
-    100%
-    {
-        -webkit-transform: scale(1);
-    }
-}
 
 .timeline-content
 {
@@ -1040,49 +999,5 @@ article
         -webkit-animation: cd-bounce-2-inverse .6s;
            -moz-animation: cd-bounce-2-inverse .6s;
                 animation: cd-bounce-2-inverse .6s;
-    }
-}
-
-@include keyframes (cd-bounce-2)
-{
-    0%
-    {
-        -webkit-transform: translateX(-100px);
-
-        opacity: 0;
-    }
-
-    60%
-    {
-        -webkit-transform: translateX(20px);
-
-        opacity: 1;
-    }
-
-    100%
-    {
-        -webkit-transform: translateX(0);
-    }
-}
-
-@include keyframes (cd-bounce-2-inverse)
-{
-    0%
-    {
-        -webkit-transform: translateX(100px);
-
-        opacity: 0;
-    }
-
-    60%
-    {
-        -webkit-transform: translateX(-20px);
-
-        opacity: 1;
-    }
-
-    100%
-    {
-        -webkit-transform: translateX(0);
     }
 }

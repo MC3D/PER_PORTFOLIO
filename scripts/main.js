@@ -25,29 +25,60 @@ $(function() {
 
   });
 
-  var timelineEvents = $('.timeline-event'),
-    offset = 0.8;
+  // store the elements returned by selectors in variables; avoids repeat querying of DOM
+  var $animationElements = $('.timeline-event');
+  var $window = $(window);
 
-  function hideEvents(events, offset) {
-    events.each(function() {
-      if ($(this).offset().top > $(window).scrollTop() + $(window).height() * offset) {
-        $(this).find('.timeline-icon, .timeline-content').addClass('is-hidden');
-      }
-    });
-  }
 
-  function showEvents(events, offset) {
-    events.each(function() {
-      if ($(this).offset().top <= $(window).scrollTop() + $(window).height() * offset && $(this).find('.timeline-icon').hasClass('is-hidden')) {
-        $(this).find('.timeline-icon, .timeline-content').removeClass('is-hidden').addClass('bounce-in');
-      }
-    });
-  }
+
+  function checkAnimationElements(){
+    var windowHeight = $window.height();
+    var windowTopPosition = $window.scrollTop();
+    var windowBottomPosition = (windowTopPosition + windowHeight);
+
+    $.each($animationElements, function() {
+    var $element = $(this);
+    var elementHeight = $element.outerHeight();
+    var elementTopPosition = $element.offset().top;
+    var elementBottomPosition = (elementTopPosition + elementHeight);
+
+    if ((elementBottomPosition >= windowTopPosition) &&
+        (elementTopPosition <= windowBottomPosition)) {
+      $element.find('.timeline-icon, .timeline-content').addClass('bounce-in');
+    } else {
+      $element.find('.timeline-icon, .timeline-content').removeClass('bounce-in');
+    }
+  });
+}
+
+
+
+
+
+
+  // var timelineEvents = $('.timeline-event'),
+  //   offset = 0.8;
+  //
+  // function hideEvents(events, offset) {
+  //   events.each(function() {
+  //     if ($(this).offset().top > $(window).scrollTop() + $(window).height() * offset) {
+  //       $(this).find('.timeline-icon, .timeline-content').addClass('is-hidden');
+  //     }
+  //   });
+  // }
+  //
+  // function showEvents(events, offset) {
+  //   events.each(function() {
+  //     if ($(this).offset().top <= $(window).scrollTop() + $(window).height() * offset && $(this).find('.timeline-icon').hasClass('is-hidden')) {
+  //       $(this).find('.timeline-icon, .timeline-content').removeClass('is-hidden').addClass('bounce-in');
+  //     }
+  //   });
+  // }
 
   //hide timeline events which are outside the viewport
-  hideEvents(timelineEvents, offset);
+  // hideEvents(timelineEvents, offset);
 
-  $(window).on('scroll', function() {
+  $(window).on('scroll resize', function() {
     if (y <= $(window).scrollTop()) {
       // if so, add the fixed class
       $('#nav').addClass('fixed');
@@ -56,11 +87,17 @@ $(function() {
       $('#nav').removeClass('fixed');
     }
 
-    (!window.requestAnimationFrame) ? setTimeout(function() {
-      showEvents(timelineEvents, offset);
-    }, 100): window.requestAnimationFrame(function() {
-      showEvents(timelineEvents, offset);
-    });
+    checkAnimationElements();
+
+    // window.requestAnimationFrame(showEvents);
+
+    // (!window.requestAnimationFrame) ? setTimeout(function() {
+    //   showEvents(timelineEvents, offset);
+    // }, 100): window.requestAnimationFrame(function() {
+    //   showEvents(timelineEvents, offset);
+    // });
   });
+
+$window.trigger('scroll');
 
 });
