@@ -36,28 +36,14 @@ $(function() {
 
   });
 
-  // $('#contact-form').on('submit', function(event) {
-  //   event.preventDefault();
-  //   // var obj = $(event.currentTarget).serializeObject();
-  //   // $.each(obj, function(key, value) {
-  //   //   var text = value.trim();
-  //   //   if (text === '') {
-  //   //     alert('Please enter valid ' + key);
-  //   //     return false;
-  //   //   }
-  //   // });
-  //   //
-  //   // var subject = document.getElementBy
-  //   //
-  //   // var messageDetails = $(event.currentTarget).serializeObject();
-  //   // console.log(messageDetails);
-  // });
-
   // store the elements returned by selectors in variables; avoids repeat querying of DOM
   var $animationElements = $('.timeline-event');
   var $window = $(window);
 
-
+  $.each($animationElements, function(){
+    var $element = $(this);
+    $element.find('.timeline-icon, .timeline-content').addClass('is-hidden');
+  });
 
   function checkAnimationElements() {
     var windowHeight = $window.height();
@@ -72,9 +58,9 @@ $(function() {
 
       if ((elementBottomPosition >= windowTopPosition) &&
         (elementTopPosition <= windowBottomPosition)) {
-        $element.find('.timeline-icon, .timeline-content').addClass('fade-in');
+        $element.find('.timeline-icon, .timeline-content').removeClass('is-hidden').addClass('fade-in');
       } else {
-        $element.find('.timeline-icon, .timeline-content').removeClass('fade-in');
+        $element.find('.timeline-icon, .timeline-content').removeClass('fade-in').addClass('is-hidden');
       }
     });
   }

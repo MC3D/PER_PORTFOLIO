@@ -548,6 +548,8 @@ article
     background: #fff;
 }
 
+
+
 .timeline-event
 {
     position: relative;
@@ -604,33 +606,6 @@ article
             animation: fade-in-slow .6s;
 }
 
-// .timeline-icon img
-// {
-//     position: relative;
-//     top: 50%;
-//     left: 50%;
-//
-//     display: block;
-//
-//     width: 24px;
-//     height: 24px;
-//     margin-top: -12px;
-//     margin-left: -12px;
-// }
-
-.timeline-icon.cd-picture
-{
-    background: #75ce66;
-}
-.timeline-icon.cd-movie
-{
-    background: #c03b44;
-}
-.timeline-icon.cd-location
-{
-    background: #f0ca45;
-}
-
 .timeline-content
 {
     position: relative;
@@ -639,7 +614,7 @@ article
     padding: 1em;
 
     border-radius: .25em;
-    background: white;
+    background: #fff;
 }
 .timeline-content:after
 {
@@ -721,12 +696,12 @@ article
             animation: fade-in-slow .6s;
 }
 
-/* inverse bounce effect on even content blocks */
+/* add inverse effect on even content blocks if motion aniamtion added */
 .timeline-event:nth-child(even) .timeline-content.fade-in
 {
-    -webkit-animation: fade-in-slow-inverse .6s;
-       -moz-animation: fade-in-slow-inverse .6s;
-            animation: fade-in-slow-inverse .6s;
+    -webkit-animation: fade-in-slow .6s;
+       -moz-animation: fade-in-slow .6s;
+            animation: fade-in-slow .6s;
 }
 
 /// contact ////////////////////////////////////////////////////////////////////
@@ -783,7 +758,7 @@ article
   text-align: right;
   background-color: #000;
   font-size: 22px;
-  padding: 10px 0;
+  padding: 11px 0 10px;
 
   a {
     color: #fff;
@@ -797,6 +772,10 @@ article
       cursor: pointer;
       color: $primary-accent-color;
     }
+  }
+
+  .media-link {
+    vertical-align: middle;
   }
 
   .octicon {
