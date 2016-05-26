@@ -433,7 +433,6 @@ article {
 
 .project-title {
   position: relative;
-  top: 50%;
   transform: translateY(-50%); }
 
 .project-links {
@@ -457,9 +456,12 @@ article {
   background-size: cover; }
 
 .thumbnail-one {
-  background: url(./../images/thumbnail-one.jpeg) no-repeat center center; }
+  background: url(./../images/thumbnail-one.jpeg) no-repeat top center;
+  font-family: 'Open Sans', sans-serif; }
+  .thumbnail-one .project-title {
+    top: 50%; }
   .thumbnail-one h1 {
-    font: 18px/1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font: 18px/1.4;
     line-height: .1;
     color: #fff; }
   .thumbnail-one span {
@@ -479,10 +481,21 @@ article {
     background: rgba(0, 0, 0, 0.1); }
 
 .thumbnail-three {
-  background: url(./../images/thumbnail-one.jpeg) no-repeat center center; }
-
-.thumbnail-four {
-  background: url(./../images/thumbnail-one.jpeg) no-repeat center center; }
+  background: linear-gradient(rgba(0, 0, 0, 0.498039), rgba(0, 0, 0, 0.498039)), url(./../images/thumbnail-three.jpeg) no-repeat center center;
+  color: #fff; }
+  .thumbnail-three .project-title {
+    top: 45%;
+    padding: 0 5%;
+    text-align: -webkit-left;
+    text-align: left; }
+  .thumbnail-three h1 {
+    font-family: 'Arizonia', Helvetica, sans-serif;
+    margin-bottom: 4%;
+    font-size: 22px; }
+  .thumbnail-three p {
+    font-family: 'Gill Sans', Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 2% 6px; }
 
 #section-timeline header::after {
   font-size: larger;
@@ -621,6 +634,19 @@ article {
   -moz-animation: cd-bounce-2-inverse .6s;
   animation: cd-bounce-2-inverse .6s; }
 
+.social-media {
+  text-align: -webkit-center;
+  text-align: center;
+  background-color: #000;
+  font-size: 22px;
+  padding: 14px 0; }
+  .social-media a {
+    color: #fff;
+    padding: 0 5px; }
+    .social-media a:hover {
+      cursor: pointer;
+      color: #fc5253; }
+
 @media only screen and (min-width: 768px) {
   .timeline-content h2 {
     font-size: 20px;
@@ -694,6 +720,10 @@ article {
     margin-left: 5%; }
   .project .thumbnail {
     width: 90%; }
+  .thumbnail-three h1 {
+    margin-left: 4%;
+    text-align: left;
+    margin-bottom: 3%; }
   .timeline::before {
     left: 50%;
     margin-left: -2px; }
