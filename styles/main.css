@@ -634,18 +634,44 @@ article {
   -moz-animation: cd-bounce-2-inverse .6s;
   animation: cd-bounce-2-inverse .6s; }
 
+#contact-form {
+  text-align: -webkit-left;
+  text-align: left; }
+  #contact-form p {
+    margin-bottom: 5px;
+    color: #fc5253; }
+  #contact-form input, #contact-form textarea {
+    padding: 5px;
+    width: 100%;
+    background: #fc5253;
+    opacity: .8;
+    color: #fff;
+    margin-bottom: 16px;
+    margin-top: 2px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px; }
+    #contact-form input:active, #contact-form input:focus, #contact-form textarea:active, #contact-form textarea:focus {
+      outline: none; }
+
 .social-media {
   text-align: -webkit-center;
   text-align: center;
   background-color: #000;
   font-size: 22px;
-  padding: 14px 0; }
+  padding: 10px 0; }
   .social-media a {
     color: #fff;
     padding: 0 5px; }
+    .social-media a:active, .social-media a:focus {
+      color: #fff; }
     .social-media a:hover {
       cursor: pointer;
       color: #fc5253; }
+  .social-media .octicon {
+    font-size: 20px;
+    position: relative;
+    bottom: .5px; }
 
 @media only screen and (min-width: 768px) {
   .timeline-content h2 {

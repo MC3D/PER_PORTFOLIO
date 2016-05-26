@@ -729,6 +729,34 @@ article
             animation: cd-bounce-2-inverse .6s;
 }
 
+/// contact ////////////////////////////////////////////////////////////////////
+
+#contact-form {
+  text-align: -webkit-left;
+  text-align: left;
+  p {
+    margin-bottom: 5px;
+    color: $primary-accent-color;
+  }
+
+  input, textarea {
+    padding: 5px;
+    width: 100%;
+    background: $primary-accent-color;
+    opacity: .8;
+    color: #fff;
+    margin-bottom: 16px;
+    margin-top: 2px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+
+    &:active, &:focus {
+      outline: none;
+    }
+  }
+}
+
 /// footer /////////////////////////////////////////////////////////////////////
 
 .social-media {
@@ -736,16 +764,31 @@ article
   text-align: center;
   background-color: #000;
   font-size: 22px;
-  padding: 14px 0;
+  padding: 10px 0;
 
   a {
     color: #fff;
     padding: 0 5px;
 
+    &:active, &:focus {
+      color: #fff;
+    }
+
     &:hover {
       cursor: pointer;
       color: $primary-accent-color;
     }
+  }
+
+  .octicon {
+    font-size: 20px;
+    position: relative;
+    bottom: .5px;
+
+    // &::before {
+    //   vertical-align: -webkit-middle;
+    //   vertical-align: middle;
+    // }
   }
 }
 
