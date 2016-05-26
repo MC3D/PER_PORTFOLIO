@@ -72,9 +72,9 @@ $(function() {
 
       if ((elementBottomPosition >= windowTopPosition) &&
         (elementTopPosition <= windowBottomPosition)) {
-        $element.find('.timeline-icon, .timeline-content').addClass('bounce-in');
+        $element.find('.timeline-icon, .timeline-content').addClass('fade-in');
       } else {
-        $element.find('.timeline-icon, .timeline-content').removeClass('bounce-in');
+        $element.find('.timeline-icon, .timeline-content').removeClass('fade-in');
       }
     });
   }
