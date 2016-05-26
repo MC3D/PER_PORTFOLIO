@@ -241,12 +241,12 @@ em {
   font-style: normal; }
 
 abbr {
-  color: #fc5253; }
+  color: #f97172; }
 
 mark {
   font-weight: inherit;
   font-style: inherit;
-  color: #fc5253;
+  color: #f97172;
   background-color: transparent; }
 
 article {
@@ -395,7 +395,7 @@ article {
   #nav li:hover {
     cursor: pointer;
     transition: color .4s;
-    color: #fc5253; }
+    color: #f97172; }
 
 #section-skills .icon {
   font-size: 40px;
@@ -447,7 +447,7 @@ article {
   .project-links a:hover {
     cursor: pointer;
     transition: color .4s;
-    color: #fc5253; }
+    color: #f97172; }
 
 .thumbnail {
   -webkit-background-size: cover;
@@ -543,7 +543,7 @@ article {
   height: 40px;
   color: #fff;
   border-radius: 50%;
-  background-color: #fc5253;
+  background-color: #f97172;
   align-items: center;
   justify-content: center; }
 
@@ -604,11 +604,6 @@ article {
 .no-touch .timeline-content .cd-read-more:hover {
   background-color: #bac4cb; }
 
-.timeline-content .cd-date {
-  float: left;
-  padding: .8em 0;
-  opacity: .7; }
-
 .timeline-content::before {
   position: absolute;
   top: 16px;
@@ -639,12 +634,11 @@ article {
   text-align: left; }
   #contact-form p {
     margin-bottom: 5px;
-    color: #fc5253; }
+    color: #f97172; }
   #contact-form input, #contact-form textarea {
     padding: 5px;
     width: 100%;
-    background: #fc5253;
-    opacity: .8;
+    background: #f97172;
     color: #fff;
     margin-bottom: 16px;
     margin-top: 2px;
@@ -653,6 +647,19 @@ article {
     font-size: 14px; }
     #contact-form input:active, #contact-form input:focus, #contact-form textarea:active, #contact-form textarea:focus {
       outline: none; }
+  #contact-form .email-link {
+    border: 1px solid #f97172;
+    padding: 5px 5px;
+    border-radius: 4px;
+    color: #f97172;
+    background-color: transparent;
+    font-size: 14px; }
+    #contact-form .email-link .fa {
+      margin-left: 4px; }
+    #contact-form .email-link:hover {
+      background-color: #f97172;
+      color: #fff;
+      cursor: pointer; }
 
 .social-media {
   text-align: -webkit-center;
@@ -667,7 +674,7 @@ article {
       color: #fff; }
     .social-media a:hover {
       cursor: pointer;
-      color: #fc5253; }
+      color: #f97172; }
   .social-media .octicon {
     font-size: 20px;
     position: relative;

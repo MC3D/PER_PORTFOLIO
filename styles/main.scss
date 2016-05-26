@@ -4,7 +4,7 @@
 @import 'animations.scss';
 
 $primary-font-family: 'Istok Web', sans-serif;
-$primary-accent-color: #fc5253;
+$primary-accent-color: #f97172;
 
 $tablet: new-breakpoint(min-width 480px max-width 965px);
 $desktop: new-breakpoint(min-width 965px);
@@ -685,14 +685,14 @@ article
 {
     background-color: #bac4cb;
 }
-.timeline-content .cd-date
-{
-    float: left;
-
-    padding: .8em 0;
-
-    opacity: .7;
-}
+// .timeline-content .cd-date
+// {
+//     float: left;
+//
+//     padding: .8em 0;
+//
+//     opacity: .7;
+// }
 .timeline-content::before
 {
     position: absolute;
@@ -743,7 +743,7 @@ article
     padding: 5px;
     width: 100%;
     background: $primary-accent-color;
-    opacity: .8;
+    // opacity: .8;
     color: #fff;
     margin-bottom: 16px;
     margin-top: 2px;
@@ -753,6 +753,25 @@ article
 
     &:active, &:focus {
       outline: none;
+    }
+  }
+
+  .email-link {
+    border: 1px solid $primary-accent-color;
+    padding: 5px 5px;
+    border-radius: 4px;
+    color: $primary-accent-color;
+    background-color: transparent;
+    font-size: 14px;
+
+    .fa {
+      margin-left: 4px;
+    }
+
+    &:hover{
+      background-color: $primary-accent-color;
+      color: #fff;
+      cursor: pointer;
     }
   }
 }

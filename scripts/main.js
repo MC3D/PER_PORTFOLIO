@@ -1,5 +1,16 @@
+/* globals alert */
+
 $(function() {
   'use strict';
+
+  // form serializer
+  $.fn.serializeObject = function() {
+    return this.serializeArray().reduce(function(acum, i) {
+      acum[i.name] = i.value;
+      return acum;
+    }, {});
+  };
+
   var y = $('#nav').offset().top;
   var x = 0;
 
@@ -24,6 +35,23 @@ $(function() {
     }
 
   });
+
+  // $('#contact-form').on('submit', function(event) {
+  //   event.preventDefault();
+  //   // var obj = $(event.currentTarget).serializeObject();
+  //   // $.each(obj, function(key, value) {
+  //   //   var text = value.trim();
+  //   //   if (text === '') {
+  //   //     alert('Please enter valid ' + key);
+  //   //     return false;
+  //   //   }
+  //   // });
+  //   //
+  //   // var subject = document.getElementBy
+  //   //
+  //   // var messageDetails = $(event.currentTarget).serializeObject();
+  //   // console.log(messageDetails);
+  // });
 
   // store the elements returned by selectors in variables; avoids repeat querying of DOM
   var $animationElements = $('.timeline-event');
