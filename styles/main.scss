@@ -94,9 +94,14 @@ article
     content: '';
 }
 
-.timeline .icon-timeline-mobile
+.timeline .icon-timeline
 {
     font-size: 28px;
+}
+
+.timeline .octicon-organization,
+.timeline .octicon-device-mobile {
+  font-size: 26px;
 }
 
 /// #sections //////////////////////////////////////////////////////////////////
@@ -339,6 +344,10 @@ article
     letter-spacing: .5px;
 }
 
+// .project p:last-child {
+//   font-size: 10px;
+// }
+
 .project .thumbnail
 {
     position: relative;
@@ -517,13 +526,16 @@ article
 
 #section-timeline header::after
 {
-    font-size: larger;
+    // font-size: larger;
     font-weight: 300;
 
     display: block;
     clear: both;
 
     content: '2016';
+    position: absolute;
+
+    padding-left: 1px;
 }
 
 .timeline
@@ -548,8 +560,6 @@ article
     background: #fff;
 }
 
-
-
 .timeline-event
 {
     position: relative;
@@ -557,6 +567,9 @@ article
     display: block;
 
     margin: 2em 0;
+
+    text-align: -webkit-left;
+    text-align: left;
 }
 .timeline-event:after
 {
@@ -627,17 +640,17 @@ article
 {
     color: #303e49;
 }
-.timeline-content p
-.timeline-content .cd-read-more,
-.timeline-content .cd-date
+.timeline-content p,
+.timeline-content .timeline-date
 {
     font-size: 13px;
     font-size: .8125rem;
 }
-.timeline-content .cd-read-more,
-.timeline-content .cd-date
+
+.timeline-content .timeline-date
 {
     display: inline-block;
+    margin: .2em 0 0;
 }
 
 .timeline-content p
@@ -646,20 +659,20 @@ article
 
     margin: 1em 0;
 }
-.timeline-content .cd-read-more
-{
-    float: right;
-
-    padding: .8em 1em;
-
-    color: white;
-    border-radius: .25em;
-    background: #acb7c0;
-}
-.no-touch .timeline-content .cd-read-more:hover
-{
-    background-color: #bac4cb;
-}
+// .timeline-content .cd-read-more
+// {
+//     float: right;
+//
+//     padding: .8em 1em;
+//
+//     color: white;
+//     border-radius: .25em;
+//     background: #acb7c0;
+// }
+// .no-touch .timeline-content .cd-read-more:hover
+// {
+//     background-color: #bac4cb;
+// }
 // .timeline-content .cd-date
 // {
 //     float: left;
@@ -758,7 +771,7 @@ article
   text-align: right;
   background-color: #000;
   font-size: 22px;
-  padding: 11px 0 10px;
+  padding: 11px 2.5px 10px 0;
 
   a {
     color: #fff;
