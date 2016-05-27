@@ -180,7 +180,9 @@ article {
 .timeline .icon-timeline {
   font-size: 28px; }
 
-.timeline .octicon-organization,
+.timeline .octicon-pencil {
+  font-size: 24px; }
+
 .timeline .octicon-device-mobile {
   font-size: 26px; }
 
@@ -561,7 +563,7 @@ article {
   text-align: right;
   background-color: #000;
   font-size: 22px;
-  padding: 11px 2.5px 10px 0; }
+  padding: 13px 2.5px 10px 0; }
   .social-media a {
     color: #fff;
     padding: 0 5px; }
