@@ -16,3 +16,35 @@ $primary-accent-color: #f97172;
 
     margin-bottom: 15px;
 }
+
+
+
+
+
+
+
+
+
+.text
+{
+    padding-top: 15px;
+
+    text-align: -webkit-auto;
+    text-align:         auto;
+
+    border-top: 2px solid #fff;
+}
+
+.text > p:nth-of-type(2)
+{
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1.5;
+
+    color: #737373;
+}
+
+.text
+    {
+        width: 90%;
+    }

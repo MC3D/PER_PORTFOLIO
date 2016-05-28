@@ -15,6 +15,11 @@
 
     text-align: -webkit-center;
     text-align:         center;
+
+    @media only screen and (min-width: 768px)
+    {
+        padding-bottom: 60px;
+    }
 }
 
 .section-grey
@@ -27,6 +32,12 @@
     width: 100%;
     margin: 0 auto;
     padding: 60px 0 30px;
+
+    @media only screen and (min-width: 768px)
+    {
+        width: 65%;
+        padding: 75px 0;
+    }
 }
 
 .section header h2
@@ -37,6 +48,11 @@
     margin-bottom: 32px;
 
     text-transform: uppercase;
+
+    @media only screen and (min-width: 768px)
+    {
+        font-size: 2.1875rem;
+    }
 }
 
 .section header p
@@ -45,23 +61,9 @@
     line-height: 1.4;
 
     color: #737373;
-}
 
-.text
-{
-    padding-top: 15px;
-
-    text-align: -webkit-auto;
-    text-align:         auto;
-
-    border-top: 2px solid #fff;
-}
-
-.text > p:nth-of-type(2)
-{
-    font-size: 16px;
-    font-weight: 100;
-    line-height: 1.5;
-
-    color: #737373;
+    @media only screen and (min-width: 768px)
+    {
+        font-size: 1.25rem;
+    }
 }

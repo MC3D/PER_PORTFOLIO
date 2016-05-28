@@ -28,6 +28,11 @@ $primary-accent-color: #f97172;
 
         background: rgba(0,0,0,.5);
     }
+
+    @media only screen and (min-width: 768px)
+    {
+        background-attachment: fixed;
+    }
 }
 
 #section-header .overlay
@@ -50,7 +55,7 @@ $primary-accent-color: #f97172;
 
     transform: translateY(-50%);
     text-align: center;
-    letter-spacing: .15em;
+    letter-spacing: .12em;
 
     color: #fff;
 }
@@ -66,6 +71,32 @@ $primary-accent-color: #f97172;
 
     color: #fff;
     background-color: #000;
+
+    @media only screen and (min-width: 768px)
+    {
+        position: absolute;
+        z-index: 15;
+        top: auto;
+        bottom: 0;
+
+        width: 100%;
+        padding: 20px 2%;
+
+        color: #fff;
+        background: transparent;
+    }
+}
+
+#nav.fixed
+{
+    @media only screen and (min-width: 768px)
+    {
+        position: fixed !important;
+        top: 0 !important;
+        bottom: auto !important;
+
+        background-color: #000 !important;
+    }
 }
 
 #nav div
@@ -75,6 +106,8 @@ $primary-accent-color: #f97172;
     text-align: -webkit-right;
     text-align:         right;
 }
+
+
 
 .toggle-button
 {
@@ -96,6 +129,11 @@ $primary-accent-color: #f97172;
     {
         cursor: pointer;
     }
+
+    @media only screen and (min-width: 768px)
+    {
+        display: none;
+    }
 }
 
 #nav .nav-list
@@ -105,13 +143,24 @@ $primary-accent-color: #f97172;
             flex-direction: column;
 
     padding: 2px 6px;
-    // position: absolute;
 
     -webkit-flex-direction: column;
     -webkit-align-items: flex-end;
             align-items: flex-end;
-    // height: 100%;
-    // background-color: #000;
+
+    @media only screen and (min-width: 768px)
+    {
+        position: static;
+
+        display: flex !important;
+                flex-direction: row;
+
+        background-color: transparent;
+
+        -webkit-justify-content: flex-end;
+                justify-content: flex-end;
+        -webkit-flex-direction: row;
+    }
 }
 
 #nav li
@@ -135,5 +184,13 @@ $primary-accent-color: #f97172;
         transition: color .4s;
 
         color: $primary-accent-color;
+    }
+
+    @media only screen and (min-width: 768px)
+    {
+        font-size: .875rem;
+        line-height: 1.225;
+
+        margin: 0 10px;
     }
 }

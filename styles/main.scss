@@ -21,6 +21,7 @@ body
 {
     font-family: $primary-font-family;
     font-size: 100%;
+
     width: 100%;
     max-width: 1800px;
     height: 100%;
@@ -100,316 +101,208 @@ article
 
     content: '';
 }
+/// min-width 768px ///////////////////////////////////////////////////////////
+// @media only screen and (min-width: 768px)
+// {
+//     .thumbnail-three
+//     {
+//         // .project-title {
+//         //   top: 40%;
+//         // }
+//     }
+//
+//     .timeline-content h2
+//     {
+//         font-size: 20px;
+//         font-size: 1.25rem;
+//     }
+//     .timeline-content p
+//     {
+//         font-size: 16px;
+//         font-size: 1rem;
+//     }
+//     .timeline-content .cd-read-more,
+//     .timeline-content .cd-date
+//     {
+//         font-size: 14px;
+//         font-size: .875rem;
+//     }
+// }
 
-.timeline .icon-timeline
-{
-    font-size: 28px;
-}
+/// min-width 1020px //////////////////////////////////////////////////////////
 
-.timeline .octicon-pencil
-{
-    font-size: 24px;
-}
-.timeline .octicon-device-mobile
-{
-    font-size: 26px;
-}
+// @media only screen and (min-width: 1020px)
+// {
+//     .timeline .icon-timeline-mobile
+//     {
+//         font-size: 36px;
+//     }
+//
 
-/// min-width 768px ////////////////////////////////////////////////////////////
 
-@media only screen and (min-width: 768px)
-{
-    .thumbnail-three
-    {
-        // .project-title {
-        //   top: 40%;
-        // }
-    }
+//
+//
 
-    .timeline-content h2
-    {
-        font-size: 20px;
-        font-size: 1.25rem;
-    }
-    .timeline-content p
-    {
-        font-size: 16px;
-        font-size: 1rem;
-    }
-    .timeline-content .cd-read-more,
-    .timeline-content .cd-date
-    {
-        font-size: 14px;
-        font-size: .875rem;
-    }
-}
-
-/// min-width 1020px ///////////////////////////////////////////////////////////
-
-@media only screen and (min-width: 1020px)
-{
-    .timeline .icon-timeline-mobile
-    {
-        font-size: 36px;
-    }
-
-    .section
-    {
-        padding-bottom: 60px;
-    }
-
-    .section header
-    {
-        padding: 75px 0;
-    }
-
-    .section header
-    {
-        width: 65%;
-    }
-
-    .section header h2
-    {
-        font-size: 2.1875rem;
-    }
-
-    .section header p
-    {
-        font-size: 1.25rem;
-    }
-
-    .item
-    {
-        float: left;
-
-        width: 33.33%;
-    }
-
-    .text
-    {
-        width: 90%;
-    }
-
-    #section-header
-    {
-        background-attachment: fixed;
-    }
-
-    #section-header h1
-    {
-        font-size: 2.375rem;
-        line-height: 2.925rem;
-    }
-
-    #nav
-    {
-        position: absolute;
-        z-index: 15;
-        top: auto;
-        bottom: 0;
-
-        width: 100%;
-        padding: 20px 2%;
-
-        color: #fff;
-        background: transparent;
-    }
-
-    .fixed
-    {
-        position: fixed !important;
-        top: 0 !important;
-        bottom: auto !important;
-
-        background-color: #000 !important;
-    }
-
-    #nav .toggle-button
-    {
-        display: none;
-    }
-
-    #nav .nav-list
-    {
-        position: static;
-
-        display: flex !important;
-                flex-direction: row;
-
-        background-color: transparent;
-
-        -webkit-justify-content: flex-end;
-                justify-content: flex-end;
-        -webkit-flex-direction: row;
-    }
-
-    #nav li
-    {
-        font-size: .875rem;
-        line-height: 1.225;
-
-        margin: 0 10px;
-    }
-
-    #section-skills .icon
-    {
-        font-size: 60px;
-
-        margin: 0 10% 25px 0;
-    }
-
-    #section-skills .fa-html5
-    {
-        font-size: 70px;
-
-        margin-bottom: 15px;
-    }
-
-    .project p
-    {
-        margin-left: 5%;
-    }
-
-    .project .thumbnail
-    {
-        width: 90%;
-    }
-
-    .thumbnail-three
-    {
-        h1
-        {
-            margin-bottom: 3%;
-            margin-left: 4%;
-
-            text-align: left;
-            // font-size: 28px;
-        }
-
-        p
-        {
-            // font-size: 10px;
-        }
-    }
-
-    .timeline::before
-    {
-        left: 50%;
-
-        margin-left: -2px;
-    }
-
-    .timeline-event
-    {
-        margin: 4em 0;
-    }
-    .timeline-event:first-child
-    {
-        margin-top: 0;
-    }
-    .timeline-event:last-child
-    {
-        margin-bottom: 0;
-    }
-
-    .timeline-icon
-    {
-        left: 50%;
-
-        width: 60px;
-        height: 60px;
-        margin-left: -30px;
-        /* Force Hardware Acceleration in WebKit */
-
-        -webkit-transform: translateZ(0);
-        // defines whether or not an element should be visible when not facing the screen
-
-        -webkit-backface-visibility: hidden;
-    }
-    .timeline-icon.is-hidden
-    {
-        visibility: hidden;
-    }
-    .timeline-icon.fade-in
-    {
-        visibility: visible;
-
-        -webkit-animation: fade-in-slow .6s;
-           -moz-animation: fade-in-slow .6s;
-                animation: fade-in-slow .6s;
-    }
-
-    .timeline-content
-    {
-        width: 45%;
-        margin-left: 0;
-        padding: 1.6em;
-    }
-    .timeline-content::before
-    {
-        top: 24px;
-        left: 100%;
-
-        border-color: transparent;
-        border-left-color: white;
-    }
-    .timeline-content .cd-read-more
-    {
-        float: left;
-    }
-    .timeline-content .cd-date
-    {
-        font-size: 16px;
-        font-size: 1rem;
-
-        position: absolute;
-        top: 6px;
-        left: 122%;
-
-        width: 100%;
-    }
-    .timeline-event:nth-child(even) .timeline-content
-    {
-        float: right;
-    }
-    .timeline-event:nth-child(even) .timeline-content::before
-    {
-        top: 24px;
-        right: 100%;
-        left: auto;
-
-        border-color: transparent;
-        border-right-color: white;
-    }
-    .timeline-event:nth-child(even) .timeline-content .cd-read-more
-    {
-        float: right;
-    }
-    .timeline-event:nth-child(even) .timeline-content .cd-date
-    {
-        right: 122%;
-        left: auto;
-
-        text-align: right;
-    }
-    .timeline-content.is-hidden
-    {
-        visibility: hidden;
-    }
-    .timeline-content.fade-in
-    {
-        visibility: visible;
-
-        -webkit-animation: fade-in-slow .6s;
-           -moz-animation: fade-in-slow .6s;
-                animation: fade-in-slow .6s;
-    }
-
-    /* inverse bounce effect on even content blocks */
-    .timeline-event:nth-child(even) .timeline-content.fade-in
-    {
-        -webkit-animation: fade-in-slow .6s;
-           -moz-animation: fade-in-slow .6s;
-                animation: fade-in-slow .6s;
-    }
-}
+//
+//     #section-skills .icon
+//     {
+//         font-size: 60px;
+//
+//         margin: 0 10% 25px 0;
+//     }
+//
+//     #section-skills .fa-html5
+//     {
+//         font-size: 70px;
+//
+//         margin-bottom: 15px;
+//     }
+//
+//     .project p
+//     {
+//         margin-left: 5%;
+//     }
+//
+//     .project .thumbnail
+//     {
+//         width: 90%;
+//     }
+//
+//     .thumbnail-three
+//     {
+//         h1
+//         {
+//             margin-bottom: 3%;
+//             margin-left: 4%;
+//
+//             text-align: left;
+//             // font-size: 28px;
+//         }
+//
+//         p
+//         {
+//             // font-size: 10px;
+//         }
+//     }
+//
+//     .timeline::before
+//     {
+//         left: 50%;
+//
+//         margin-left: -2px;
+//     }
+//
+//     .timeline-event
+//     {
+//         margin: 4em 0;
+//     }
+//     .timeline-event:first-child
+//     {
+//         margin-top: 0;
+//     }
+//     .timeline-event:last-child
+//     {
+//         margin-bottom: 0;
+//     }
+//
+//     .timeline-icon
+//     {
+//         left: 50%;
+//
+//         width: 60px;
+//         height: 60px;
+//         margin-left: -30px;
+//         /* Force Hardware Acceleration in WebKit */
+//
+//         -webkit-transform: translateZ(0);
+//         // defines whether or not an element should be visible when not facing the screen
+//
+//         -webkit-backface-visibility: hidden;
+//     }
+//     .timeline-icon.is-hidden
+//     {
+//         visibility: hidden;
+//     }
+//     .timeline-icon.fade-in
+//     {
+//         visibility: visible;
+//
+//         -webkit-animation: fade-in-slow .6s;
+//            -moz-animation: fade-in-slow .6s;
+//                 animation: fade-in-slow .6s;
+//     }
+//
+//     .timeline-content
+//     {
+//         width: 45%;
+//         margin-left: 0;
+//         padding: 1.6em;
+//     }
+//     .timeline-content::before
+//     {
+//         top: 24px;
+//         left: 100%;
+//
+//         border-color: transparent;
+//         border-left-color: white;
+//     }
+//     .timeline-content .cd-read-more
+//     {
+//         float: left;
+//     }
+//     .timeline-content .cd-date
+//     {
+//         font-size: 16px;
+//         font-size: 1rem;
+//
+//         position: absolute;
+//         top: 6px;
+//         left: 122%;
+//
+//         width: 100%;
+//     }
+//     .timeline-event:nth-child(even) .timeline-content
+//     {
+//         float: right;
+//     }
+//     .timeline-event:nth-child(even) .timeline-content::before
+//     {
+//         top: 24px;
+//         right: 100%;
+//         left: auto;
+//
+//         border-color: transparent;
+//         border-right-color: white;
+//     }
+//     .timeline-event:nth-child(even) .timeline-content .cd-read-more
+//     {
+//         float: right;
+//     }
+//     .timeline-event:nth-child(even) .timeline-content .cd-date
+//     {
+//         right: 122%;
+//         left: auto;
+//
+//         text-align: right;
+//     }
+//     .timeline-content.is-hidden
+//     {
+//         visibility: hidden;
+//     }
+//     .timeline-content.fade-in
+//     {
+//         visibility: visible;
+//
+//         -webkit-animation: fade-in-slow .6s;
+//            -moz-animation: fade-in-slow .6s;
+//                 animation: fade-in-slow .6s;
+//     }
+//
+//     /* inverse bounce effect on even content blocks */
+//     .timeline-event:nth-child(even) .timeline-content.fade-in
+//     {
+//         -webkit-animation: fade-in-slow .6s;
+//            -moz-animation: fade-in-slow .6s;
+//                 animation: fade-in-slow .6s;
+//     }
+// }
