@@ -1,0 +1,147 @@
+$primary-font-family: 'Istok Web', sans-serif;
+$primary-accent-color: #f97172;
+
+.project p
+{
+    font-size: 12px;
+    line-height: 1.4;
+
+    margin: 2% 0 20px;
+
+    text-align: left;
+    letter-spacing: .5px;
+}
+
+.project .thumbnail
+{
+    position: relative;
+
+    width: 100%;
+    height: 220px;
+    margin: 0 auto;
+
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+
+    &:after
+    {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        content: '';
+    }
+}
+
+
+.project-title
+{
+    position: relative;
+
+    transform: translateY(-50%);
+}
+
+.project-links
+{
+    position: absolute;
+    z-index: 10;
+    right: 8px;
+    bottom: 7px;
+}
+
+.project-links a
+{
+    padding-left: 5px;
+
+    color: #fff;
+
+    &:hover
+    {
+        cursor: pointer;
+        transition: color .4s;
+
+        color: $primary-accent-color;
+    }
+}
+
+.thumbnail
+{
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+
+.thumbnail-one
+{
+    font-family: 'Open Sans', sans-serif;
+
+    background: url(./../images/thumbnail-one.jpeg) no-repeat top center;
+
+    .project-title
+    {
+        top: 50%;
+    }
+
+    h1
+    {
+        font: 18px/1.4;
+        line-height: .1;
+
+        color: #fff;
+    }
+
+    span
+    {
+        font-size: 5px;
+    }
+}
+
+.thumbnail-two
+{
+    background: url(./../images/thumbnail-two.jpeg) no-repeat center center;
+    background-position: 0 18%;
+
+    &:after
+    {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        content: '';
+
+        background: rgba(0,0,0,.1);
+    }
+}
+
+.thumbnail-three
+{
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, .498039), rgba(0, 0, 0, .498039)), url(./../images/thumbnail-three.jpeg) no-repeat center center;
+
+    .project-title
+    {
+        top: 43%;
+
+        padding: 0 5%;
+
+        text-align: -webkit-center;
+        text-align:         center;
+    }
+
+    h1
+    {
+        font-family: 'Arizonia', Helvetica, sans-serif;
+        font-size: 35px;
+
+        margin-bottom: 4%;
+    }
+}

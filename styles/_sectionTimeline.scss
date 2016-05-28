@@ -1,0 +1,175 @@
+$primary-font-family: 'Istok Web', sans-serif;
+$primary-accent-color: #f97172;
+
+#section-timeline header::after
+{
+    font-weight: 300;
+
+    position: absolute;
+
+    display: block;
+    clear: both;
+
+    padding-left: 1px;
+
+    content: '2016';
+}
+
+.timeline
+{
+    position: relative;
+
+    padding: 2em 0;
+}
+
+.timeline::before
+{
+    position: absolute;
+    top: 0;
+    left: 18px;
+
+    width: 4px;
+    height: 100%;
+    /* this is the vertical line */
+
+    content: '';
+
+    background: #fff;
+}
+
+.timeline-event
+{
+    position: relative;
+
+    display: block;
+
+    margin: 2em 0;
+
+    text-align: -webkit-left;
+    text-align:         left;
+}
+.timeline-event:after
+{
+    display: table;
+    clear: both;
+
+    content: '';
+}
+.timeline-event:first-child
+{
+    margin-top: 0;
+}
+.timeline-event:last-child
+{
+    margin-bottom: 0;
+}
+
+.timeline-icon
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    width: 40px;
+    height: 40px;
+
+    color: #fff;
+    border-radius: 50%;
+    background-color: $primary-accent-color;
+
+    align-items: center;
+    justify-content: center;;
+}
+
+.timeline-icon.is-hidden
+{
+    visibility: hidden;
+}
+.timeline-icon.fade-in
+{
+    visibility: visible;
+
+    -webkit-animation: fade-in-slow .6s;
+       -moz-animation: fade-in-slow .6s;
+            animation: fade-in-slow .6s;
+}
+
+.timeline-content
+{
+    position: relative;
+
+    margin-left: 60px;
+    padding: 1em;
+
+    border-radius: .25em;
+    background: #fff;
+}
+.timeline-content:after
+{
+    display: table;
+    clear: both;
+
+    content: '';
+}
+.timeline-content h2
+{
+    color: #303e49;
+}
+.timeline-content p,
+.timeline-content .timeline-date
+{
+    font-size: 13px;
+    font-size: .8125rem;
+}
+
+.timeline-content .timeline-date
+{
+    display: inline-block;
+
+    margin: .2em 0 0;
+}
+
+.timeline-content p
+{
+    line-height: 1.6;
+
+    margin: 1em 0;
+}
+
+.timeline-content::before
+{
+    position: absolute;
+    top: 16px;
+    right: 100%;
+
+    width: 0;
+    height: 0;
+
+    content: '';
+
+    border: 7px solid transparent;
+    border-right: 7px solid white;
+}
+
+.timeline-content.is-hidden
+{
+    visibility: hidden;
+}
+.timeline-content.fade-in
+{
+    visibility: visible;
+
+    -webkit-animation: fade-in .6s;
+       -moz-animation: fade-in .6s;
+            animation: fade-in .6s;
+}
+
+/* add inverse effect on even content blocks if motion aniamtion added */
+.timeline-event:nth-child(even) .timeline-content.fade-in
+{
+    -webkit-animation: fade-in .6s;
+       -moz-animation: fade-in .6s;
+            animation: fade-in .6s;
+}

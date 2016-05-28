@@ -1,0 +1,47 @@
+$primary-font-family: 'Istok Web', sans-serif;
+$primary-accent-color: #f97172;
+
+.social-media
+{
+    font-size: 22px;
+
+    padding: 13px 2.5px 10px 0;
+
+    text-align: -webkit-right;
+    text-align:         right;
+
+    background-color: #000;
+
+    a
+    {
+        padding: 0 5px;
+
+        color: #fff;
+
+        &:active,
+        &:focus
+        {
+            color: #fff;
+        }
+
+        &:hover
+        {
+            cursor: pointer;
+
+            color: $primary-accent-color;
+        }
+    }
+
+    .media-link
+    {
+        vertical-align: middle;
+    }
+
+    .octicon
+    {
+        font-size: 20px;
+
+        position: relative;
+        bottom: .5px;
+    }
+}
