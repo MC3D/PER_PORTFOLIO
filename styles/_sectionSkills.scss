@@ -3,26 +3,44 @@ $primary-accent-color: #f97172;
 
 #section-skills .icon
 {
-    font-size: 40px;
+    font-size: 2.5rem;
 
     display: block;
 
     margin: 0 0 15px;
+
+    @media only screen and (min-width: 768px)
+    {
+        margin: 0 10% 25px 0;
+    }
 }
 
 #section-skills .fa-html5
 {
-    font-size: 48px;
+    font-size: 3rem;
 
     margin-bottom: 15px;
+
+    @media only screen and (min-width: 768px)
+    {
+        margin-bottom: 15px;
+    }
 }
 
+.item:nth-child(2){
+  @media only screen and (min-width: 768px){
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+}
 
+.text > p:nth-of-type(2)
+{
+    font-weight: 100;
+    line-height: 1.5;
 
-
-
-
-
+    color: #737373;
+}
 
 
 .text
@@ -33,18 +51,8 @@ $primary-accent-color: #f97172;
     text-align:         auto;
 
     border-top: 2px solid #fff;
+
+    // @media only screen and (min-width: 768px){
+    //   width: 90%;
+    // }
 }
-
-.text > p:nth-of-type(2)
-{
-    font-size: 16px;
-    font-weight: 100;
-    line-height: 1.5;
-
-    color: #737373;
-}
-
-.text
-    {
-        width: 90%;
-    }
