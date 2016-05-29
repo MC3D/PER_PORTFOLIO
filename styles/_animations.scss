@@ -36,7 +36,28 @@
     }
 }
 
+
 @include keyframes (bounce)
+{
+    0%
+    {
+        -webkit-transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    60%
+    {
+        opacity: .5;
+    }
+
+    100%
+    {
+        -webkit-transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@include keyframes (bounce-reverse)
 {
     0%
     {
@@ -47,8 +68,6 @@
 
     60%
     {
-        -webkit-transform: translateX(-20px);
-
         opacity: .5;
     }
 

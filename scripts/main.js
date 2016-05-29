@@ -58,9 +58,9 @@ $(function() {
 
       // if ((elementBottomPosition >= windowTopPosition) &&
       if (elementTopPosition <= windowBottomPosition) {
-        $element.find('.timeline-icon, .timeline-content').removeClass('is-hidden').addClass('fade-in');
+        $element.find('.timeline-icon, .timeline-content').removeClass('is-hidden').addClass('animate');
       } else if (elementTopPosition >= windowBottomPosition){
-        $element.find('.timeline-icon, .timeline-content').removeClass('fade-in').addClass('is-hidden');
+        $element.find('.timeline-icon, .timeline-content').removeClass('animate').addClass('is-hidden');
       }
     });
   }

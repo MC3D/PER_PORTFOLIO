@@ -124,13 +124,13 @@ $primary-accent-color: #f97172;
 {
     visibility: hidden;
 }
-.timeline-icon.fade-in
+.timeline-icon.animate
 {
     visibility: visible;
 
-    -webkit-animation: fade-in-slow .6s;
-       -moz-animation: fade-in-slow .6s;
-            animation: fade-in-slow .6s;
+    -webkit-animation: fade-in .6s;
+       -moz-animation: fade-in .6s;
+            animation: fade-in .6s;
 }
 
 .timeline-content
@@ -218,13 +218,13 @@ $primary-accent-color: #f97172;
 {
     visibility: hidden;
 }
-.timeline-content.fade-in
+.timeline-content.animate
 {
     visibility: visible;
 
-    -webkit-animation: fade-in .6s;
-       -moz-animation: fade-in .6s;
-            animation: fade-in .6s;
+    -webkit-animation: bounce .6s;
+       -moz-animation: bounce .6s;
+            animation: bounce .6s;
 }
 
 .timeline-event:nth-child(even) .timeline-content
@@ -250,11 +250,11 @@ $primary-accent-color: #f97172;
 
 
 /* add inverse effect on even content blocks if motion aniamtion added */
-.timeline-event:nth-child(even) .timeline-content.fade-in
+.timeline-event:nth-child(even) .timeline-content.animate
 {
-    -webkit-animation: fade-in .6s;
-       -moz-animation: fade-in .6s;
-            animation: fade-in .6s;
+    -webkit-animation: bounce-reverse .6s;
+       -moz-animation: bounce-reverse .6s;
+            animation: bounce-reverse .6s;
 }
 
 .timeline .icon-timeline
