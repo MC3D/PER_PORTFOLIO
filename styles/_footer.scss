@@ -39,11 +39,15 @@ $primary-accent-color: #f97172;
         vertical-align: middle;
     }
 
+    .fa {
+      font-size: 1.3rem;
+    }
+
     .octicon
     {
         font-size: 1.25rem;
 
         position: relative;
-        bottom: .5px;
+        bottom: 2px;
     }
 }

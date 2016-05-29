@@ -127,10 +127,12 @@
       color: #f97172; }
   .social-media .media-link {
     vertical-align: middle; }
+  .social-media .fa {
+    font-size: 1.3rem; }
   .social-media .octicon {
     font-size: 1.25rem;
     position: relative;
-    bottom: .5px; }
+    bottom: 2px; }
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
