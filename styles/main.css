@@ -197,17 +197,23 @@ html {
 .section {
   max-width: 1800px;
   margin: 0 auto;
-  padding: 0 7%;
+  padding: 0 15px;
   padding-bottom: 35px;
   text-align: -webkit-center;
   text-align: center; }
+  .section article {
+    max-width: 75em;
+    margin: auto; }
+  .section .item {
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .section .item {
+        float: left;
+        margin-right: 2%;
+        width: 32%; } }
   @media only screen and (min-width: 768px) {
-    .section {
-      padding-bottom: 60px; } }
-  @media only screen and (min-width: 768px) {
-    .section .item {
-      float: left;
-      width: 31.33%; } }
+    .section .item:nth-child(3n) {
+      margin-right: 0; } }
 
 .section-grey {
   background-color: #f3f3f3; }
@@ -320,7 +326,7 @@ html {
   padding: 3px 5px;
   color: #fff;
   background-color: #000; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1040px) {
     #nav {
       position: absolute;
       z-index: 15;
@@ -331,7 +337,7 @@ html {
       color: #fff;
       background: transparent; } }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1040px) {
   #nav.fixed {
     position: fixed !important;
     top: 0 !important;
@@ -353,7 +359,7 @@ html {
     outline: none; }
   .toggle-button:hover {
     cursor: pointer; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1040px) {
     .toggle-button {
       display: none; } }
 
@@ -365,7 +371,7 @@ html {
   -webkit-flex-direction: column;
   -webkit-align-items: flex-end;
   align-items: flex-end; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1040px) {
     #nav .nav-list {
       position: static;
       display: flex !important;
@@ -394,25 +400,39 @@ html {
       line-height: 1.225;
       margin: 0 10px; } }
 
+#section-projects .items {
+  max-width: 75em;
+  margin: 0 auto; }
+
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+  .section .item.project {
+    width: 49%;
+    margin-right: 2%;
+    float: left; } }
+
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+  .item.project:nth-child(2n) {
+    margin-right: 0; } }
+
 .project p {
   font-size: .75rem;
   line-height: 1.4;
   margin: 2% 0 20px;
   text-align: left;
   letter-spacing: .5px; }
-  @media only screen and (min-width: 768px) {
-    .project p {
-      margin-left: 5%; } }
 
 .project .thumbnail {
   position: relative;
   width: 100%;
-  height: 220px;
   margin: 0 auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  .project .thumbnail:before {
+    content: "";
+    display: block;
+    padding-top: 58%; }
   .project .thumbnail:after {
     position: absolute;
     z-index: 1;
@@ -421,9 +441,6 @@ html {
     bottom: 0;
     left: 0;
     content: ''; }
-  @media only screen and (min-width: 768px) {
-    .project .thumbnail {
-      width: 90%; } }
 
 .project-title {
   position: relative;
@@ -437,6 +454,7 @@ html {
 
 .project-links a {
   padding-left: 5px;
+  font-size: .9rem;
   color: #fff; }
   .project-links a:hover {
     cursor: pointer;
@@ -450,50 +468,14 @@ html {
   background-size: cover; }
 
 .thumbnail-one {
-  font-family: 'Open Sans', sans-serif;
   background: url(./../images/thumbnail-one.jpeg) no-repeat top center; }
-  .thumbnail-one .project-title {
-    top: 50%; }
-  .thumbnail-one h1 {
-    font: 1.125rem/1.4;
-    line-height: .1;
-    color: #fff; }
-  .thumbnail-one span {
-    font-size: .3125rem; }
 
 .thumbnail-two {
-  background: url(./../images/thumbnail-two.jpeg) no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./../images/thumbnail-two.jpeg) no-repeat center center;
   background-position: 0 18%; }
-  .thumbnail-two:after {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    content: '';
-    background: rgba(0, 0, 0, 0.1); }
 
 .thumbnail-three {
-  color: #fff;
-  background: linear-gradient(rgba(0, 0, 0, 0.498039), rgba(0, 0, 0, 0.498039)), url(./../images/thumbnail-three.jpeg) no-repeat center center; }
-  .thumbnail-three .project-title {
-    top: 43%;
-    padding: 0 5%;
-    text-align: -webkit-center;
-    text-align: center; }
-    @media only screen and (min-width: 768px) {
-      .thumbnail-three .project-title {
-        top: 40%; } }
-  .thumbnail-three h1 {
-    font-family: 'Arizonia', Helvetica, sans-serif;
-    font-size: 2.1875rem;
-    margin-bottom: 4%; }
-    @media only screen and (min-width: 768px) {
-      .thumbnail-three h1 {
-        margin-bottom: 3%;
-        margin-left: 4%;
-        text-align: left; } }
+  background: linear-gradient(transparent, transparent), url(./../images/thumbnail-three.jpeg) no-repeat center center; }
 
 #section-skills .icon {
   font-size: 2.5rem;
@@ -509,11 +491,6 @@ html {
   @media only screen and (min-width: 768px) {
     #section-skills .fa-html5 {
       margin-bottom: 15px; } }
-
-@media only screen and (min-width: 768px) {
-  .item:nth-child(2) {
-    margin-right: 3%;
-    margin-left: 3%; } }
 
 .text > p:nth-of-type(2) {
   font-weight: 100;
@@ -601,12 +578,18 @@ html {
   content: ''; }
 
 .timeline-content h2 {
-  color: #303e49; }
+  color: #303e49;
+  font-size: 1.25rem; }
 
 .timeline-content p,
 .timeline-content .timeline-date {
   font-size: 13px;
   font-size: .8125rem; }
+  @media only screen and (min-width: 768px) {
+    .timeline-content p,
+    .timeline-content .timeline-date {
+      font-size: 16px;
+      font-size: 1rem; } }
 
 .timeline-content .timeline-date {
   display: inline-block;

@@ -101,29 +101,6 @@ article
 
     content: '';
 }
-/// min-width 768px /////////////////////////////////////////////////////////
-// @media only screen and (min-width: 768px)
-// {
-
-//
-//     .timeline-content h2
-//     {
-//         font-size: 20px;
-//         font-size: 1.25rem;
-//     }
-//     .timeline-content p
-//     {
-//         font-size: 16px;
-//         font-size: 1rem;
-//     }
-//     .timeline-content .cd-read-more,
-//     .timeline-content .cd-date
-//     {
-//         font-size: 14px;
-//         font-size: .875rem;
-//     }
-// }
-/// min-width 1020px //////////////////////////////////////////////////////////
 
 // @media only screen and (min-width: 1020px)
 // {
@@ -132,7 +109,6 @@ article
 //         font-size: 36px;
 //     }
 //
-
 //     .timeline::before
 //     {
 //         left: 50%;
@@ -240,7 +216,6 @@ article
 //     .timeline-content.fade-in
 //     {
 //         visibility: visible;
-
 //         -webkit-animation: fade-in-slow .6s;
 //            -moz-animation: fade-in-slow .6s;
 //                 animation: fade-in-slow .6s;
