@@ -687,9 +687,9 @@ html {
 
 .timeline-content.animate {
   visibility: visible;
-  -webkit-animation: bounce .6s;
-  -moz-animation: bounce .6s;
-  animation: bounce .6s; }
+  -webkit-animation: bounce-reverse .6s;
+  -moz-animation: bounce-reverse .6s;
+  animation: bounce-reverse .6s; }
 
 @media only screen and (min-width: 960px) {
   .timeline-event:nth-child(even) .timeline-content {
@@ -704,10 +704,11 @@ html {
     border-right-color: white; } }
 
 /* add inverse effect on even content blocks if motion aniamtion added */
-.timeline-event:nth-child(even) .timeline-content.animate {
-  -webkit-animation: bounce-reverse .6s;
-  -moz-animation: bounce-reverse .6s;
-  animation: bounce-reverse .6s; }
+@media only screen and (min-width: 960px) {
+  .timeline-event:nth-child(odd) .timeline-content.animate {
+    -webkit-animation: bounce .6s;
+    -moz-animation: bounce .6s;
+    animation: bounce .6s; } }
 
 .timeline .icon-timeline {
   font-size: 1.75rem; }
