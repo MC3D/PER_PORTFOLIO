@@ -223,7 +223,7 @@ html {
   width: 100%;
   margin: 0 auto;
   padding: 60px 0 30px; }
-  @media only screen and (min-width: 960px) {
+  @media only screen and (min-width: 768px) {
     .section header {
       width: 65%; } }
 
@@ -508,8 +508,11 @@ html {
   text-align: auto;
   border-top: 2px solid #fff; }
 
+@media only screen and (min-width: 768px) {
+  #section-timeline header {
+    width: 100%; } }
+
 #section-timeline header::after {
-  font-weight: 400;
   position: absolute;
   display: block;
   clear: both;
