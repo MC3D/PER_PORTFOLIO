@@ -223,10 +223,9 @@ html {
   width: 100%;
   margin: 0 auto;
   padding: 60px 0 30px; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 960px) {
     .section header {
-      width: 65%;
-      padding: 75px 0; } }
+      width: 65%; } }
 
 .section header h2 {
   font-size: 1.25rem;
@@ -510,14 +509,17 @@ html {
   border-top: 2px solid #fff; }
 
 #section-timeline header::after {
-  font-weight: 300;
+  font-weight: 400;
   position: absolute;
   display: block;
   clear: both;
-  padding-left: 1px; }
-  @media only screen and (min-width: 768px) {
+  padding-left: 1px;
+  content: '2016'; }
+  @media only screen and (min-width: 960px) {
     #section-timeline header::after {
-      position: relative; } }
+      position: relative;
+      top: 15px;
+      font-size: 1.3rem; } }
 
 .timeline {
   position: relative;

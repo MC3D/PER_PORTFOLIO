@@ -16,11 +16,6 @@
     text-align: -webkit-center;
     text-align:         center;
 
-    @media only screen and (min-width: 768px)
-    {
-        // padding-bottom: 30px;
-    }
-
     article
     {
         max-width: 75em;
@@ -49,10 +44,6 @@
     }
 }
 
-
-
-
-
 .section-grey
 {
     background-color: #f3f3f3;
@@ -64,10 +55,9 @@
     margin: 0 auto;
     padding: 60px 0 30px;
 
-    @media only screen and (min-width: 768px)
+    @media only screen and (min-width: 960px)
     {
         width: 65%;
-        padding: 75px 0;
     }
 }
 

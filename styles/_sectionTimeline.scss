@@ -3,7 +3,7 @@ $primary-accent-color: #f97172;
 
 #section-timeline header::after
 {
-    font-weight: 300;
+    font-weight: 400;
 
     position: absolute;
 
@@ -11,10 +11,13 @@ $primary-accent-color: #f97172;
     clear: both;
 
     padding-left: 1px;
+    content: '2016';
 
-    @media only screen and (min-width: 768px)
+    @media only screen and (min-width: 960px)
     {
         position: relative;
+        top: 15px;
+        font-size: 1.3rem;
     }
 }
 
