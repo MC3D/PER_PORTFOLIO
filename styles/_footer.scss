@@ -3,7 +3,7 @@ $primary-accent-color: #f97172;
 
 .social-media
 {
-    font-size: 22px;
+    font-size: 1.375px;
 
     padding: 13px 2.5px 10px 0;
 
@@ -11,6 +11,8 @@ $primary-accent-color: #f97172;
     text-align:         right;
 
     background-color: #000;
+
+    clear: both;
 
     a
     {
@@ -39,7 +41,7 @@ $primary-accent-color: #f97172;
 
     .octicon
     {
-        font-size: 20px;
+        font-size: 1.25rem;
 
         position: relative;
         bottom: .5px;

@@ -1,24 +1,30 @@
 $primary-font-family: 'Istok Web', sans-serif;
 $primary-accent-color: #f97172;
 
-#section-projects .items{
-  max-width: 75em;
-  margin: 0 auto;
+#section-projects .items
+{
+    max-width: 75em;
+    margin: 0 auto;
 }
 
-.section .item.project {
-  @media only screen and (min-width: 640px) and (max-width: 768px){
-    width: 49%;
-    margin-right: 2%;
-    float: left;
-  }
+.section .item.project
+{
+    @media only screen and (min-width: 640px) and (max-width: 768px)
+    {
+        float: left;
+
+        width: 49%;
+        margin-right: 2%;
+    }
 }
 
-.item.project:nth-child(2n){
-  @media only screen and (min-width: 640px) and (max-width: 768px){
-    margin-right: 0;
-  }
-  }
+.item.project:nth-child(2n)
+{
+    @media only screen and (min-width: 640px) and (max-width: 768px)
+    {
+        margin-right: 0;
+    }
+}
 
 
 .project p
@@ -30,7 +36,6 @@ $primary-accent-color: #f97172;
 
     text-align: left;
     letter-spacing: .5px;
-
 }
 
 .project .thumbnail
@@ -45,10 +50,13 @@ $primary-accent-color: #f97172;
          -o-background-size: cover;
             background-size: cover;
 
-    &:before{
-      content: "";
-      display: block;
-      padding-top: 58%;
+    &:before
+    {
+        display: block;
+
+        padding-top: 58%;
+
+        content: '';
     }
 
     &:after
@@ -63,8 +71,8 @@ $primary-accent-color: #f97172;
         content: '';
     }
 
-    @media only screen and (min-width: 768px){
-
+    @media only screen and (min-width: 768px)
+    {
     }
 }
 
@@ -72,6 +80,7 @@ $primary-accent-color: #f97172;
 .project-title
 {
     position: relative;
+
     transform: translateY(-50%);
 }
 
@@ -85,8 +94,10 @@ $primary-accent-color: #f97172;
 
 .project-links a
 {
-    padding-left: 5px;
     font-size: .9rem;
+
+    padding-left: 5px;
+
     color: #fff;
 
     &:hover

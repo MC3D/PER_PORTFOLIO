@@ -75,11 +75,12 @@
     opacity: 1; } }
 
 .social-media {
-  font-size: 22px;
+  font-size: 1.375px;
   padding: 13px 2.5px 10px 0;
   text-align: -webkit-right;
   text-align: right;
-  background-color: #000; }
+  background-color: #000;
+  clear: both; }
   .social-media a {
     padding: 0 5px;
     color: #fff; }
@@ -91,7 +92,7 @@
   .social-media .media-link {
     vertical-align: middle; }
   .social-media .octicon {
-    font-size: 20px;
+    font-size: 1.25rem;
     position: relative;
     bottom: .5px; }
 
@@ -209,8 +210,8 @@ html {
     @media only screen and (min-width: 768px) {
       .section .item {
         float: left;
-        margin-right: 2%;
-        width: 32%; } }
+        width: 32%;
+        margin-right: 2%; } }
   @media only screen and (min-width: 768px) {
     .section .item:nth-child(3n) {
       margin-right: 0; } }
@@ -252,7 +253,7 @@ html {
     color: #f97172; }
   #contact-form input,
   #contact-form textarea {
-    font-size: 14px;
+    font-size: .875rem;
     width: 100%;
     margin-top: 2px;
     margin-bottom: 16px;
@@ -266,18 +267,23 @@ html {
     #contact-form textarea:focus {
       outline: none; }
   #contact-form .email-link {
-    font-size: 14px;
+    font-size: .875rem;
     padding: 5px 5px;
     color: #f97172;
     border: 1px solid #f97172;
     border-radius: 4px;
-    background-color: transparent; }
+    background-color: transparent;
+    display: block; }
     #contact-form .email-link .fa {
       margin-left: 4px; }
     #contact-form .email-link:hover {
       cursor: pointer;
       color: #fff;
       background-color: #f97172; }
+  @media only screen and (min-width: 768px) {
+    #contact-form {
+      width: 65%;
+      margin: 0 auto; } }
 
 #section-header {
   position: relative;
@@ -406,9 +412,9 @@ html {
 
 @media only screen and (min-width: 640px) and (max-width: 768px) {
   .section .item.project {
+    float: left;
     width: 49%;
-    margin-right: 2%;
-    float: left; } }
+    margin-right: 2%; } }
 
 @media only screen and (min-width: 640px) and (max-width: 768px) {
   .item.project:nth-child(2n) {
@@ -430,9 +436,9 @@ html {
   -o-background-size: cover;
   background-size: cover; }
   .project .thumbnail:before {
-    content: "";
     display: block;
-    padding-top: 58%; }
+    padding-top: 58%;
+    content: ''; }
   .project .thumbnail:after {
     position: absolute;
     z-index: 1;
@@ -453,8 +459,8 @@ html {
   bottom: 7px; }
 
 .project-links a {
-  padding-left: 5px;
   font-size: .9rem;
+  padding-left: 5px;
   color: #fff; }
   .project-links a:hover {
     cursor: pointer;
@@ -601,17 +607,15 @@ html {
   content: ''; }
 
 .timeline-content h2 {
-  color: #303e49;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  color: #303e49; }
 
 .timeline-content p,
 .timeline-content .timeline-date {
-  font-size: 13px;
   font-size: .8125rem; }
   @media only screen and (min-width: 768px) {
     .timeline-content p,
     .timeline-content .timeline-date {
-      font-size: 16px;
       font-size: 1rem; } }
 
 .timeline-content .timeline-date {
@@ -716,13 +720,13 @@ mark {
 article {
   height: 100%; }
 
-.clearfix:before {
+.clearfix::before {
   display: block;
   overflow: hidden;
   height: 0;
   content: ''; }
 
-.clearfix:after {
+.clearfix::after {
   display: block;
   clear: both;
   overflow: hidden;

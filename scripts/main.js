@@ -52,14 +52,14 @@ $(function() {
 
     $.each($animationElements, function() {
       var $element = $(this);
-      var elementHeight = $element.outerHeight();
+      // var elementHeight = $element.outerHeight();
       var elementTopPosition = $element.offset().top;
-      var elementBottomPosition = (elementTopPosition + elementHeight);
+      // var elementBottomPosition = (elementTopPosition + elementHeight);
 
-      if ((elementBottomPosition >= windowTopPosition) &&
-        (elementTopPosition <= windowBottomPosition)) {
+      // if ((elementBottomPosition >= windowTopPosition) &&
+      if (elementTopPosition <= windowBottomPosition) {
         $element.find('.timeline-icon, .timeline-content').removeClass('is-hidden').addClass('fade-in');
-      } else {
+      } else if (elementTopPosition >= windowBottomPosition){
         $element.find('.timeline-icon, .timeline-content').removeClass('fade-in').addClass('is-hidden');
       }
     });

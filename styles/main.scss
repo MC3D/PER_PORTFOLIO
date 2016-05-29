@@ -81,7 +81,7 @@ article
     height: 100%;
 }
 
-.clearfix:before
+.clearfix::before
 {
     display: block;
     overflow: hidden;
@@ -91,7 +91,7 @@ article
     content: '';
 }
 
-.clearfix:after
+.clearfix::after
 {
     display: block;
     clear: both;

@@ -161,12 +161,10 @@ $primary-accent-color: #f97172;
 .timeline-content p,
 .timeline-content .timeline-date
 {
-    font-size: 13px;
     font-size: .8125rem;
 
     @media only screen and (min-width: 768px)
     {
-        font-size: 16px;
         font-size: 1rem;
     }
 }

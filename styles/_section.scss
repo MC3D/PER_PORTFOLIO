@@ -21,9 +21,10 @@
         // padding-bottom: 30px;
     }
 
-    article{
-      max-width: 75em;
-      margin: auto;
+    article
+    {
+        max-width: 75em;
+        margin: auto;
     }
 
     .item
@@ -33,18 +34,18 @@
         @media only screen and (min-width: 768px)
         {
             float: left;
-            margin-right: 2%;
+
             width: 32%;
-
-
+            margin-right: 2%;
         }
     }
 
-    .item:nth-child(3n){
-      @media only screen and (min-width: 768px)
-      {
-          margin-right: 0;
-      }
+    .item:nth-child(3n)
+    {
+        @media only screen and (min-width: 768px)
+        {
+            margin-right: 0;
+        }
     }
 }
 
