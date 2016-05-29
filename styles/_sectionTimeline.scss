@@ -12,8 +12,9 @@ $primary-accent-color: #f97172;
 
     padding-left: 1px;
 
-    @media only screen and (min-width: 768px){
-      position: relative;
+    @media only screen and (min-width: 768px)
+    {
+        position: relative;
     }
 }
 
@@ -57,8 +58,9 @@ $primary-accent-color: #f97172;
     text-align: -webkit-left;
     text-align:         left;
 
-    @media only screen and (min-width: 960px){
-      margin: 4em 0;
+    @media only screen and (min-width: 960px)
+    {
+        margin: 4em 0;
     }
 }
 .timeline-event:after
@@ -71,7 +73,6 @@ $primary-accent-color: #f97172;
 .timeline-event:first-child
 {
     margin-top: 0;
-
 }
 .timeline-event:last-child
 {
@@ -96,20 +97,19 @@ $primary-accent-color: #f97172;
     align-items: center;
     justify-content: center;;
 
-    @media only screen and (min-width: 960px){
-    
-          left: 50%;
+    @media only screen and (min-width: 960px)
+    {
+        left: 50%;
 
-          width: 60px;
-          height: 60px;
-          margin-left: -30px;
-          /* Force Hardware Acceleration in WebKit */
+        width: 60px;
+        height: 60px;
+        margin-left: -30px;
+        /* Force Hardware Acceleration in WebKit */
 
-          -webkit-transform: translateZ(0);
-          // defines whether or not an element should be visible when not facing the screen
+        -webkit-transform: translateZ(0);
+        // defines whether or not an element should be visible when not facing the screen
 
-          -webkit-backface-visibility: hidden;
-
+        -webkit-backface-visibility: hidden;
     }
 }
 
@@ -136,10 +136,11 @@ $primary-accent-color: #f97172;
     border-radius: .25em;
     background: #fff;
 
-    @media only screen and (min-width: 960px){
-      width: 45%;
-      margin-left: 0;
-      padding: 1.6em;
+    @media only screen and (min-width: 960px)
+    {
+        width: 45%;
+        margin-left: 0;
+        padding: 1.6em;
     }
 }
 
@@ -152,8 +153,9 @@ $primary-accent-color: #f97172;
 }
 .timeline-content h2
 {
-  color: #303e49;
-  font-size: 1.25rem;
+    font-size: 1.25rem;
+
+    color: #303e49;
 }
 
 .timeline-content p,
@@ -162,9 +164,10 @@ $primary-accent-color: #f97172;
     font-size: 13px;
     font-size: .8125rem;
 
-    @media only screen and (min-width: 768px){
-      font-size: 16px;
-      font-size: 1rem;
+    @media only screen and (min-width: 768px)
+    {
+        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
@@ -196,12 +199,13 @@ $primary-accent-color: #f97172;
     border: 7px solid transparent;
     border-right: 7px solid white;
 
-    @media only screen and (min-width: 960px){
-      top: 24px;
-      left: 100%;
+    @media only screen and (min-width: 960px)
+    {
+        top: 24px;
+        left: 100%;
 
-      border-color: transparent;
-      border-left-color: white;
+        border-color: transparent;
+        border-left-color: white;
     }
 }
 
@@ -218,21 +222,25 @@ $primary-accent-color: #f97172;
             animation: fade-in .6s;
 }
 
-.timeline-event:nth-child(even) .timeline-content {
-  @media only screen and (min-width: 960px){
-    float: right;
-  }
+.timeline-event:nth-child(even) .timeline-content
+{
+    @media only screen and (min-width: 960px)
+    {
+        float: right;
+    }
 }
 
-.timeline-event:nth-child(even) .timeline-content::before {
-  @media only screen and (min-width: 960px){
-    top: 24px;
-    right: 100%;
-    left: auto;
+.timeline-event:nth-child(even) .timeline-content::before
+{
+    @media only screen and (min-width: 960px)
+    {
+        top: 24px;
+        right: 100%;
+        left: auto;
 
-    border-color: transparent;
-    border-right-color: white;
-  }
+        border-color: transparent;
+        border-right-color: white;
+    }
 }
 
 
