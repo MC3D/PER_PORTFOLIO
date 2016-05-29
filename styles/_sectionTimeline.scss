@@ -12,7 +12,9 @@ $primary-accent-color: #f97172;
 
     padding-left: 1px;
 
-    content: '2016';
+    @media only screen and (min-width: 768px){
+      position: relative;
+    }
 }
 
 .timeline
@@ -35,6 +37,13 @@ $primary-accent-color: #f97172;
     content: '';
 
     background: #fff;
+
+    @media only screen and (min-width: 960px)
+    {
+        left: 50%;
+
+        margin-left: -2px;
+    }
 }
 
 .timeline-event
@@ -47,6 +56,10 @@ $primary-accent-color: #f97172;
 
     text-align: -webkit-left;
     text-align:         left;
+
+    @media only screen and (min-width: 960px){
+      margin: 4em 0;
+    }
 }
 .timeline-event:after
 {
@@ -58,6 +71,7 @@ $primary-accent-color: #f97172;
 .timeline-event:first-child
 {
     margin-top: 0;
+
 }
 .timeline-event:last-child
 {
@@ -81,6 +95,22 @@ $primary-accent-color: #f97172;
 
     align-items: center;
     justify-content: center;;
+
+    @media only screen and (min-width: 960px){
+    
+          left: 50%;
+
+          width: 60px;
+          height: 60px;
+          margin-left: -30px;
+          /* Force Hardware Acceleration in WebKit */
+
+          -webkit-transform: translateZ(0);
+          // defines whether or not an element should be visible when not facing the screen
+
+          -webkit-backface-visibility: hidden;
+
+    }
 }
 
 .timeline-icon.is-hidden
@@ -105,7 +135,14 @@ $primary-accent-color: #f97172;
 
     border-radius: .25em;
     background: #fff;
+
+    @media only screen and (min-width: 960px){
+      width: 45%;
+      margin-left: 0;
+      padding: 1.6em;
+    }
 }
+
 .timeline-content:after
 {
     display: table;
@@ -158,6 +195,14 @@ $primary-accent-color: #f97172;
 
     border: 7px solid transparent;
     border-right: 7px solid white;
+
+    @media only screen and (min-width: 960px){
+      top: 24px;
+      left: 100%;
+
+      border-color: transparent;
+      border-left-color: white;
+    }
 }
 
 .timeline-content.is-hidden
@@ -173,6 +218,24 @@ $primary-accent-color: #f97172;
             animation: fade-in .6s;
 }
 
+.timeline-event:nth-child(even) .timeline-content {
+  @media only screen and (min-width: 960px){
+    float: right;
+  }
+}
+
+.timeline-event:nth-child(even) .timeline-content::before {
+  @media only screen and (min-width: 960px){
+    top: 24px;
+    right: 100%;
+    left: auto;
+
+    border-color: transparent;
+    border-right-color: white;
+  }
+}
+
+
 /* add inverse effect on even content blocks if motion aniamtion added */
 .timeline-event:nth-child(even) .timeline-content.fade-in
 {
@@ -183,14 +246,14 @@ $primary-accent-color: #f97172;
 
 .timeline .icon-timeline
 {
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 .timeline .octicon-pencil
 {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .timeline .octicon-device-mobile
 {
-    font-size: 26px;
+    font-size: 1.635rem;
 }

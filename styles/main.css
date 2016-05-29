@@ -508,8 +508,10 @@ html {
   position: absolute;
   display: block;
   clear: both;
-  padding-left: 1px;
-  content: '2016'; }
+  padding-left: 1px; }
+  @media only screen and (min-width: 768px) {
+    #section-timeline header::after {
+      position: relative; } }
 
 .timeline {
   position: relative;
@@ -524,6 +526,10 @@ html {
   /* this is the vertical line */
   content: '';
   background: #fff; }
+  @media only screen and (min-width: 960px) {
+    .timeline::before {
+      left: 50%;
+      margin-left: -2px; } }
 
 .timeline-event {
   position: relative;
@@ -531,6 +537,9 @@ html {
   margin: 2em 0;
   text-align: -webkit-left;
   text-align: left; }
+  @media only screen and (min-width: 960px) {
+    .timeline-event {
+      margin: 4em 0; } }
 
 .timeline-event:after {
   display: table;
@@ -555,6 +564,15 @@ html {
   background-color: #f97172;
   align-items: center;
   justify-content: center; }
+  @media only screen and (min-width: 960px) {
+    .timeline-icon {
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      margin-left: -30px;
+      /* Force Hardware Acceleration in WebKit */
+      -webkit-transform: translateZ(0);
+      -webkit-backface-visibility: hidden; } }
 
 .timeline-icon.is-hidden {
   visibility: hidden; }
@@ -571,6 +589,11 @@ html {
   padding: 1em;
   border-radius: .25em;
   background: #fff; }
+  @media only screen and (min-width: 960px) {
+    .timeline-content {
+      width: 45%;
+      margin-left: 0;
+      padding: 1.6em; } }
 
 .timeline-content:after {
   display: table;
@@ -608,6 +631,12 @@ html {
   content: '';
   border: 7px solid transparent;
   border-right: 7px solid white; }
+  @media only screen and (min-width: 960px) {
+    .timeline-content::before {
+      top: 24px;
+      left: 100%;
+      border-color: transparent;
+      border-left-color: white; } }
 
 .timeline-content.is-hidden {
   visibility: hidden; }
@@ -618,6 +647,18 @@ html {
   -moz-animation: fade-in .6s;
   animation: fade-in .6s; }
 
+@media only screen and (min-width: 960px) {
+  .timeline-event:nth-child(even) .timeline-content {
+    float: right; } }
+
+@media only screen and (min-width: 960px) {
+  .timeline-event:nth-child(even) .timeline-content::before {
+    top: 24px;
+    right: 100%;
+    left: auto;
+    border-color: transparent;
+    border-right-color: white; } }
+
 /* add inverse effect on even content blocks if motion aniamtion added */
 .timeline-event:nth-child(even) .timeline-content.fade-in {
   -webkit-animation: fade-in .6s;
@@ -625,13 +666,13 @@ html {
   animation: fade-in .6s; }
 
 .timeline .icon-timeline {
-  font-size: 28px; }
+  font-size: 1.75rem; }
 
 .timeline .octicon-pencil {
-  font-size: 24px; }
+  font-size: 1.5rem; }
 
 .timeline .octicon-device-mobile {
-  font-size: 26px; }
+  font-size: 1.635rem; }
 
 html,
 body {
