@@ -35,24 +35,7 @@ $(function() {
     }
 
   });
-
-  $('#contact-form').on('submit', function(event){
-    event.preventDefault();
-    var messageDetails = $(event.currentTarget).serializeObject();
-    $.ajax({
-      url: 'email-handler.php',
-      type: 'POST',
-      data: messageDetails,
-      success: function(data, textStatus, jqXHR)
-        {
-          alert(data);
-
-        },
-    });
-    alert('Your email was sent!');
-    $(event.currentTarget)[0].reset();
-  });
-
+  
   // store the elements returned by selectors in variables; avoids repeat querying of DOM
   var $animationElements = $('.timeline-event');
   var $window = $(window);

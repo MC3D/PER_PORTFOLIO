@@ -33,9 +33,15 @@ if( empty($errors))
 	$headers .= "Reply-To: $email_address";
 
 	mail($to,$email_subject,$email_body,$headers);
-
+  echo '<script type="text/javascript">alert("Your message was sent!");</script>';
+  header('Location: https://www.madychapman.com/');
 	//redirect to the 'thank you' page
 	// header('Location: contact-form-thank-you.html');
+
+  $_POST['subject']="";
+  $_POST['message']="";
+  $_POST['name']="";
+  $_POST['email']="";
 } else{
   echo $errors;
 }
