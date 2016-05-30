@@ -112,7 +112,7 @@
 
 .social-media {
   font-size: 1.375px;
-  padding: 13px 2.5px 10px 0;
+  padding: 10px 2.5px 10px 0;
   text-align: -webkit-right;
   text-align: right;
   background-color: #000;
@@ -128,11 +128,7 @@
   .social-media .media-link {
     vertical-align: middle; }
   .social-media .fa {
-    font-size: 1.3rem; }
-  .social-media .octicon {
-    font-size: 1.25rem;
-    position: relative;
-    bottom: 2px; }
+    font-size: 1.4rem; }
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
