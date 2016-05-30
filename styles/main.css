@@ -514,7 +514,7 @@ html {
   background-position: 0 18%; }
 
 .thumbnail-three {
-  background: linear-gradient(transparent, transparent), url(./../images/thumbnail-three.jpeg) no-repeat center center; }
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(./../images/thumbnail-three.jpeg) no-repeat center center/contain; }
 
 #section-skills .icon {
   font-size: 2.5rem;

@@ -130,5 +130,5 @@ $primary-accent-color: #f97172;
 
 .thumbnail-three
 {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(./../images/thumbnail-three.jpeg) no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .5)), url(./../images/thumbnail-three.jpeg) no-repeat center center/contain;
 }
