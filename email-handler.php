@@ -33,7 +33,7 @@ if( empty($errors))
 	$headers .= "Reply-To: $email_address";
 
 	mail($to,$email_subject,$email_body,$headers);
-  echo '<script type="text/javascript">alert("Your message was sent!");</script>';
+
 	//redirect to the 'thank you' page
 	// header('Location: contact-form-thank-you.html');
 } else{
