@@ -50,7 +50,7 @@ $(function() {
         },
     });
     alert('Your email was sent!');
-    $(event.currentTarget).reset();
+    $(event.currentTarget)[0].reset();
   });
 
   // store the elements returned by selectors in variables; avoids repeat querying of DOM
