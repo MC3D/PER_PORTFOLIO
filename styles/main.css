@@ -715,6 +715,14 @@ html {
 .timeline .octicon-device-mobile {
   font-size: 1.635rem; }
 
+.thank-you-message {
+  width: 100%; }
+  .thank-you-message .fa-check-circle {
+    font-size: 4rem;
+    text-align: -webkit-center;
+    text-align: center;
+    color: #40bc5b; }
+
 html,
 body {
   font-family: "Istok Web", sans-serif;
@@ -769,3 +777,22 @@ article {
   overflow: hidden;
   height: 0;
   content: ''; }
+
+.thank-you-container {
+  font-family: "Istok Web", sans-serif;
+  background: url(./../images/image-thankyou.jpeg) no-repeat center/cover;
+  height: 100%;
+  padding-top: 25%; }
+  .thank-you-container .thank-you-message {
+    width: 60%;
+    margin: 0 auto;
+    text-align: -webkit-center;
+    text-align: center; }
+  .thank-you-container h1 {
+    font-size: 2rem;
+    color: #f97172; }
+  .thank-you-container h3 {
+    margin: 5px 0;
+    font-weight: 100; }
+  .thank-you-container p {
+    font-weight: 100; }
