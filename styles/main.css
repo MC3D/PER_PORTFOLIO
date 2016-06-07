@@ -420,23 +420,27 @@ html {
       justify-content: flex-end;
       -webkit-flex-direction: row; } }
 
-#nav li {
+#nav li, #nav a {
   font-size: .675rem;
   font-weight: 600;
   line-height: 1.125;
   float: left;
-  margin: 10px 0;
   letter-spacing: .15em;
   text-transform: uppercase;
   color: #fff; }
-  #nav li:hover {
+  #nav li:hover, #nav a:hover {
     cursor: pointer;
     transition: color .4s;
     color: #f97172; }
   @media only screen and (min-width: 768px) {
-    #nav li {
+    #nav li, #nav a {
       font-size: .875rem;
-      line-height: 1.225;
+      line-height: 1.225; } }
+
+#nav li {
+  margin: 10px 0; }
+  @media only screen and (min-width: 768px) {
+    #nav li {
       margin: 0 10px; } }
 
 #section-projects .items {
@@ -551,9 +555,9 @@ html {
   content: '2016'; }
   @media only screen and (min-width: 960px) {
     #section-timeline header::after {
+      font-size: 1.3rem;
       position: relative;
-      top: 15px;
-      font-size: 1.3rem; } }
+      top: 15px; } }
 
 .timeline {
   position: relative;
@@ -643,8 +647,7 @@ html {
   content: ''; }
 
 .timeline-content h2 {
-  font-size: 1.25rem;
-  color: #303e49; }
+  font-size: 1.25rem; }
 
 .timeline-content p,
 .timeline-content .timeline-date {
@@ -656,7 +659,8 @@ html {
 
 .timeline-content .timeline-date {
   display: inline-block;
-  margin: .2em 0 0; }
+  margin: .2em 0 0;
+  color: #303e49; }
 
 .timeline-content p {
   line-height: 1.6;

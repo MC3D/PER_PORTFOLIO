@@ -168,15 +168,13 @@ $primary-accent-color: #f97172;
     }
 }
 
-#nav li
+#nav li, #nav a
 {
     font-size: .675rem;
     font-weight: 600;
     line-height: 1.125;
 
     float: left;
-
-    margin: 10px 0;
 
     letter-spacing: .15em;
     text-transform: uppercase;
@@ -195,6 +193,15 @@ $primary-accent-color: #f97172;
     {
         font-size: .875rem;
         line-height: 1.225;
+    }
+}
+
+#nav li
+{
+    margin: 10px 0;
+
+    @media only screen and (min-width: 768px)
+    {
 
         margin: 0 10px;
     }
