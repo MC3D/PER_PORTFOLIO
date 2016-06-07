@@ -117,6 +117,9 @@
   text-align: right;
   background-color: #000;
   clear: both; }
+  @media only screen and (min-width: 1040px) {
+    .social-media {
+      padding-right: 2%; } }
   .social-media a {
     padding: 0 5px;
     color: #fff; }
@@ -125,6 +128,9 @@
     .social-media a:hover {
       cursor: pointer;
       color: #f97172; }
+  @media only screen and (min-width: 1040px) {
+    .social-media a:last-child {
+      margin-right: 13px; } }
   .social-media .media-link {
     vertical-align: middle; }
   .social-media .fa {
@@ -421,7 +427,7 @@ html {
       -webkit-flex-direction: row; } }
 
 #nav li, #nav a {
-  font-size: .675rem;
+  font-size: .775rem;
   font-weight: 600;
   line-height: 1.125;
   float: left;
@@ -439,7 +445,7 @@ html {
 
 #nav li {
   margin: 10px 0; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1040px) {
     #nav li {
       margin: 0 10px; } }
 

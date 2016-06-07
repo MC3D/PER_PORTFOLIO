@@ -170,7 +170,7 @@ $primary-accent-color: #f97172;
 
 #nav li, #nav a
 {
-    font-size: .675rem;
+    font-size: .775rem;
     font-weight: 600;
     line-height: 1.125;
 
@@ -200,7 +200,7 @@ $primary-accent-color: #f97172;
 {
     margin: 10px 0;
 
-    @media only screen and (min-width: 768px)
+    @media only screen and (min-width: 1040px)
     {
 
         margin: 0 10px;
