@@ -35,7 +35,11 @@ $(function() {
     }
 
   });
-  
+
+  function clearContactForm(){
+    $('#contact-form')[0].reset();
+  }
+
   // store the elements returned by selectors in variables; avoids repeat querying of DOM
   var $animationElements = $('.timeline-event');
   var $window = $(window);
