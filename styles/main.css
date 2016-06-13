@@ -328,7 +328,7 @@ html {
   position: relative;
   overflow: hidden;
   height: 100%;
-  background: url(./../images/image-home.jpeg) no-repeat center;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(./../images/image-index.jpg) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -469,6 +469,8 @@ html {
   margin: 2% 0 20px;
   text-align: left;
   letter-spacing: .5px; }
+  .project p span {
+    color: #f97172; }
 
 .project .thumbnail {
   position: relative;
@@ -520,7 +522,7 @@ html {
   background: url(./../images/thumbnail-one.jpeg) no-repeat top center; }
 
 .thumbnail-two {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./../images/thumbnail-two.jpeg) no-repeat center center;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.2)), url(./../images/thumbnail-two.jpg) no-repeat center center;
   background-position: 0 18%; }
 
 .thumbnail-three {

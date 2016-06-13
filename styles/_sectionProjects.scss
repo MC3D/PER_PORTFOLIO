@@ -32,10 +32,16 @@ $primary-accent-color: #f97172;
     font-size: .75rem;
     line-height: 1.4;
 
+
+
     margin: 2% 0 20px;
 
     text-align: left;
     letter-spacing: .5px;
+
+    span {
+      color: $primary-accent-color;
+    }
 }
 
 .project .thumbnail
@@ -124,7 +130,7 @@ $primary-accent-color: #f97172;
 
 .thumbnail-two
 {
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(./../images/thumbnail-two.jpeg) no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .2)), url(./../images/thumbnail-two.jpg) no-repeat center center;
     background-position: 0 18%;
 }
 

@@ -36,9 +36,19 @@ $(function() {
 
   });
 
-  function clearContactForm(){
-    $('#contact-form')[0].reset();
-  }
+  $('#contact-form').on('submit', function(event){
+    event.preventDefault();
+    $.ajax({
+      type: 'post',
+      url: './email-handler.php',
+      data: $('contact-form').serializeObject(),
+      success: function(){
+        alert('form was submitted');
+        event.target.reset();
+        window.location.href = 'thankyou.html';
+      },
+    });
+  });
 
   // store the elements returned by selectors in variables; avoids repeat querying of DOM
   var $animationElements = $('.timeline-event');
