@@ -522,11 +522,10 @@ html {
   background: url(./../images/thumbnail-one.jpeg) no-repeat top center; }
 
 .thumbnail-two {
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.2)), url(./../images/thumbnail-two.jpg) no-repeat center center;
-  background-position: 0 18%; }
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.2)), url(./../images/thumbnail-two.jpg) no-repeat center bottom; }
 
 .thumbnail-three {
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(./../images/thumbnail-three.jpeg) no-repeat center center/contain; }
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(./../images/thumbnail-three.jpeg) no-repeat center bottom; }
 
 #section-skills .icon {
   font-size: 2.5rem;

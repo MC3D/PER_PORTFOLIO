@@ -130,11 +130,10 @@ $primary-accent-color: #f97172;
 
 .thumbnail-two
 {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .2)), url(./../images/thumbnail-two.jpg) no-repeat center center;
-    background-position: 0 18%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .2)), url(./../images/thumbnail-two.jpg) no-repeat center bottom;
 }
 
 .thumbnail-three
 {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .5)), url(./../images/thumbnail-three.jpeg) no-repeat center center/contain;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .5)), url(./../images/thumbnail-three.jpeg) no-repeat center bottom;
 }
