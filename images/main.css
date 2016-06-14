@@ -341,14 +341,7 @@ html {
     bottom: 0;
     left: 0;
     content: '';
-    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.5));
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.5));
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.5));
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
-    /* Standard syntax */ }
+    background: rgba(0, 0, 0, 0.5); }
   @media only screen and (min-width: 768px) {
     #section-header {
       background-attachment: fixed; } }
@@ -433,8 +426,7 @@ html {
       justify-content: flex-end;
       -webkit-flex-direction: row; } }
 
-#nav li,
-#nav a {
+#nav li, #nav a {
   font-size: .775rem;
   font-weight: 600;
   line-height: 1.125;
@@ -442,14 +434,12 @@ html {
   letter-spacing: .15em;
   text-transform: uppercase;
   color: #fff; }
-  #nav li:hover,
-  #nav a:hover {
+  #nav li:hover, #nav a:hover {
     cursor: pointer;
     transition: color .4s;
     color: #f97172; }
   @media only screen and (min-width: 768px) {
-    #nav li,
-    #nav a {
+    #nav li, #nav a {
       font-size: .875rem;
       line-height: 1.225; } }
 
