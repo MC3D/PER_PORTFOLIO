@@ -328,7 +328,8 @@ html {
   position: relative;
   overflow: hidden;
   height: 100%;
-  background: url(./../images/image-index.jpg) no-repeat center center;
+  width: 100%;
+  background: url(./../images/image-index.jpg) no-repeat top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -351,7 +352,7 @@ html {
     /* Standard syntax */ }
   @media only screen and (min-width: 768px) {
     #section-header {
-      background-attachment: fixed; } }
+      background-attachment: scroll; } }
 
 #section-header .overlay {
   height: 100%; }
