@@ -334,6 +334,9 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  @media only screen and (min-width: 1024px) {
+    #section-header {
+      background-position: center center; } }
   #section-header:after {
     position: absolute;
     z-index: 1;

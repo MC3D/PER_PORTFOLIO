@@ -16,6 +16,10 @@ $primary-accent-color: #f97172;
          -o-background-size: cover;
             background-size: cover;
 
+   @media only screen and(min-width: 1024px){
+     background-position: center center;
+   }
+
     &:after
     {
         position: absolute;
