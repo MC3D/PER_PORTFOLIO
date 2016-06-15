@@ -3,8 +3,8 @@
     font-family: $primary-font-family;
 
     height: 100%;
-    padding-top: 120px;
 
+    overflow: hidden;
     background: url(./../images/image-thankyou.jpeg) no-repeat center/cover;
 
     .thank-you-message
@@ -14,6 +14,9 @@
 
         text-align: -webkit-center;
         text-align:         center;
+
+        position: relative;
+        top: 25%;
     }
 
     h1

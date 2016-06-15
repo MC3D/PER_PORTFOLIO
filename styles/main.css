@@ -328,7 +328,7 @@ html {
   position: relative;
   overflow: hidden;
   height: 100%;
-  background: url(./../images/image-index.jpg) no-repeat center;
+  background: url(./../images/image-index.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -739,13 +739,15 @@ html {
 .thank-you-container {
   font-family: "Istok Web", sans-serif;
   height: 100%;
-  padding-top: 120px;
+  overflow: hidden;
   background: url(./../images/image-thankyou.jpeg) no-repeat center/cover; }
   .thank-you-container .thank-you-message {
     width: 88%;
     margin: 0 auto;
     text-align: -webkit-center;
-    text-align: center; }
+    text-align: center;
+    position: relative;
+    top: 25%; }
   .thank-you-container h1 {
     font-size: 2rem;
     color: #f97172; }
