@@ -94,4 +94,11 @@ $(function() {
 
   $window.trigger('scroll');
 
+  ///// REMOVES PROJECT GRAYSCALE FILTER ///////////////////////////////////////
+  // $('.project-links').on('mouseover', function(){
+  //   $(this).parents().eq(0).removeClass('thumbnail-filter');
+  // }).on('mouseout', function(){
+  //   $(this).parents().eq(0).addClass('thumbnail-filter');
+  // });
+
 });
