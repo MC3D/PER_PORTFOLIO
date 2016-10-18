@@ -329,7 +329,7 @@ html {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background: url(./../images/image-index.jpg) no-repeat top center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./../images/image-index.jpeg) no-repeat top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -464,7 +464,7 @@ html {
       margin: 0 10px; } }
 
 #nav i {
-  font-size: .775rem;
+  font-size: .675rem;
   line-height: 1.125;
   margin-left: 3px; }
   @media only screen and (min-width: 768px) {
@@ -532,23 +532,32 @@ html {
   color: #fff; }
   .project-links a:hover {
     cursor: pointer;
-    transition: color .4s;
+    transition: color .5s;
     color: #f97172; }
 
 .thumbnail {
+  -webkit-transition: all .5s ease-in-out;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
+.thumbnail-filter {
+  filter: url(filters.svg#grayscale);
+  /* Firefox 3.5+ */
+  filter: gray;
+  /* IE5+ */
+  -webkit-filter: grayscale(1);
+  /* Webkit Nightlies & Chrome Canary */ }
+
 .thumbnail-one {
-  background: url(./../images/thumbnail-one.jpeg) no-repeat top center; }
+  background: url(./../images/thumbnail-one.jpeg) no-repeat; }
 
 .thumbnail-two {
-  background: url(./../images/thumbnail-two.jpg) no-repeat center bottom; }
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75)), url(./../images/thumbnail-two.jpeg) no-repeat bottom; }
 
 .thumbnail-three {
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75)), url(./../images/thumbnail-three.jpeg) no-repeat center center; }
+  background: url(./../images/thumbnail-three.jpeg) no-repeat; }
 
 #section-skills .icon {
   font-size: 2.5rem;

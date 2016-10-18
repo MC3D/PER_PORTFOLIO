@@ -26,6 +26,12 @@ $(function() {
     x = 0;
   });
 
+  $('.project-links a').on('mouseover', function(){
+    $(this).parent().parent().toggleClass('thumbnail-filter').fadeIn(500);
+  }).on('mouseout', function(){
+    $(this).parent().parent().toggleClass('thumbnail-filter').fadeIn(500);
+  });
+
   $('.toggle-button').on('click', function() {
     var display = $('.nav-list').css('display');
     if (display === 'none') {

@@ -108,7 +108,7 @@ $primary-accent-color: #f97172;
     &:hover
     {
         cursor: pointer;
-        transition: color .4s;
+        transition: color .5s;
 
         color: $primary-accent-color;
     }
@@ -116,29 +116,32 @@ $primary-accent-color: #f97172;
 
 .thumbnail
 {
+    -webkit-transition: all .5s ease-in-out;
+
     -webkit-background-size: cover;
        -moz-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
 }
 
-// .thumbnail-filter
-// {
-//     -webkit-filter: grayscale(90%);
-//             filter: grayscale(90%);
-// }
+.thumbnail-filter
+{
+            filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+            filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+}
 
 .thumbnail-one
 {
-    background: url(./../images/thumbnail-one.jpeg) no-repeat top center;
+    background: url(./../images/thumbnail-one.jpeg) no-repeat;
 }
 
 .thumbnail-two
 {
-    background: url(./../images/thumbnail-two.jpg) no-repeat center bottom;
+    background: linear-gradient(rgba(0,0,0, 0), rgba(0,0,0,.75)), url(./../images/thumbnail-two.jpeg) no-repeat bottom;
 }
 
 .thumbnail-three
 {
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.75)), url(./../images/thumbnail-three.jpeg) no-repeat center center;
+    background: url(./../images/thumbnail-three.jpeg) no-repeat;
 }
