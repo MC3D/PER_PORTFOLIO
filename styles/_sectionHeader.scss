@@ -221,6 +221,9 @@ $primary-accent-color: #f97172;
     font-size: .675rem;
     line-height: 1.125;
 
+    position: relative;
+    top: 1px;
+
     margin-left: 3px;
 
     @media only screen and (min-width: 768px)
